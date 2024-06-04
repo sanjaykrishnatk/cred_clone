@@ -1,0 +1,41 @@
+.custom-offcanvas.show {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+.offcanvas.offcanvas-bottom {
+  min-height: 100%;
+  animation: fade-in 1s linear;
+  background-color: black !important;
+}
+.offcanvas {
+  transition: opacity 1s ease !important;
+}
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.hamburger-react {
+  opacity: 0.6;
+}
+.toggle-custom,
+.toggle-btn {
+  border: 0 !important;
+}
+.upi-container {
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;
+  cursor: pointer;
+  padding: 24px 30px;
+  padding-right: 15px !important;
+  height: 80px;
+}
+.vertical-line {
+  margin-right: 10px;
+  height: 80px;
+  width: 1px;
+  background-color: rgba(255, 255, 255, 0.2);
+}

@@ -36,6 +36,11 @@ function Home() {
           crafted for the
           <br /> creditworthy
         </h1>
+        <p className="intro-sub-txt">
+          CRED is a members-only club that enables the
+          <br />
+          trustworthy to make financial progress
+        </p>
       </div>
     </div>
   );

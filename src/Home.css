@@ -11,6 +11,7 @@ video {
   height: 100%;
   top: 0;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   color: rgb(255, 255, 255);
@@ -94,4 +95,16 @@ width: 100%; */
   .menu-section {
     padding: 70px 130px;
   }
+}
+.intro-sub-txt {
+  width: 100%;
+  font-family: gilroy;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 34px;
+  letter-spacing: 0.5px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  opacity: 0.9;
+  margin-top: 30px;
 }

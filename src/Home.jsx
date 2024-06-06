@@ -36,6 +36,8 @@ function Home() {
           crafted for the
           <br /> creditworthy
         </h1>
+      </div>
+      <div className="content bg-transparent text-center">
         <p className="intro-sub-txt">
           CRED is a members-only club that enables the
           <br />

@@ -101,6 +101,7 @@ width: 100%; */
     font-weight: 700;
     line-height: 100px;
     letter-spacing: -0.4px;
+    margin-bottom: 88px;
   }
   .menu-section {
     padding: 70px 130px;
@@ -115,6 +116,6 @@ width: 100%; */
     text-align: center;
     color: rgb(255, 255, 255);
     opacity: 0.9;
-    margin-top: 30px;
+    margin-top: 258px !important;
   }
 }

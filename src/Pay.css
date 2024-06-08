@@ -1,5 +1,6 @@
 * {
   background-color: black;
+  font-family: Gilroy;
 }
 .pay-wrapper {
   min-height: 100vh;
@@ -42,7 +43,7 @@
 }
 @font-face {
   font-family: medusa;
-  src: url(./assets/Meduza\ Clean.ttf);
+  src: url(./assets/MeduzaClean.ttf);
 }
 #intro-main {
   font-family: Gilroy !important;
@@ -158,7 +159,7 @@
   margin-bottom: 250px;
 }
 .shopping-txt {
-  font-family: gilroy-regular;
+  font-family: Gilroy;
   font-size: 49.59px;
   max-width: 842px;
   line-height: 80px;

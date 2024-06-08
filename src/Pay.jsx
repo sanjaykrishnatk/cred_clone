@@ -28,7 +28,9 @@ function Pay() {
         <h1 className="m-0 ps-4 pe-4 p-md-0 text-center">
           make a statement
           <br />
-          <span className="sec-page-txt">every time you pay</span>
+          <span className="sec-page-txt" style={{ fontSize: "100px" }}>
+            every time you pay
+          </span>
         </h1>
         <h5 className="ps-5 pe-5 p-md-0 sec-page-sub-txt">
           scan & pay via UPI. earn assured rewards. claim collectibles. all
@@ -43,7 +45,7 @@ function Pay() {
         <div className="col-md-10 d-flex align-items-center justify-content-center">
           <div className="row d-flex justify-content-between feature-1 w-100 p-5">
             <div className="col-md-6 col-sm-12 d-flex flex-column justify-content-center p-0">
-              <h1 className="feature-main mb-0 ms-md-5">
+              <h1 className="feature-main mb-0 ms-md-5 ps-0">
                 scan
                 <br />
                 any QR
@@ -72,7 +74,7 @@ function Pay() {
               </video>
             </div>
             <div className="col-md-6 col-sm-12 d-flex flex-column justify-content-center align-items-center p-0 order-1 order-md-2">
-              <h1 className="feature-main mb-0 ms-md-5">
+              <h1 className="feature-main mb-0 ms-md-5 ps-0">
                 pay
                 <br />
                 instantly
@@ -94,7 +96,7 @@ function Pay() {
         <div className="col-md-10 d-flex align-items-center justify-content-center">
           <div className="row d-flex justify-content-between feature-1 w-100 p-5">
             <div className="col-md-6 col-sm-12 d-flex flex-column justify-content-center p-0">
-              <h1 className="feature-main mb-0 ms-md-5">
+              <h1 className="feature-main mb-0 ms-md-5 ps-0">
                 earn
                 <br />
                 assured
@@ -187,7 +189,7 @@ function Pay() {
         <div className="col-md-2"></div>
         <div className="col-md-8">
           <div className="row d-flex justify-content-center align-items-center">
-            <div className="col-md-6 col-sm-12 d-flex flex-column justify-content-center order-2 order-md-1">
+            <div className="col-md-6 col-sm-12 d-flex flex-column justify-content-center order-2 order-md-1 upi-txt-container">
               <h1 className="fw-bold upi-txt">
                 switch to anonymity.
                 <br /> create an alias UPI ID.
@@ -201,7 +203,14 @@ function Pay() {
               </h4>
             </div>
             <div className="col-md-6 col-sm-12 d-flex justify-content-center align-items-center order-1 order-md-2">
-              <video autoPlay muted loop width={"430px"} height={"230px"}>
+              <video
+                autoPlay
+                muted
+                loop
+                width={"430px"}
+                height={"230px"}
+                className="security-video"
+              >
                 <source src="/security-anonymity.mp4" />
               </video>
             </div>
@@ -213,7 +222,7 @@ function Pay() {
         <div className="col-md-2"></div>
         <div className="col-md-8">
           <div className="row d-flex justify-content-center align-items-center">
-            <div className="col-md-6 col-sm-12 d-flex flex-column justify-content-center order-2 order-md-2 ps-md-5">
+            <div className="col-md-6 col-sm-12 d-flex flex-column justify-content-center order-2 order-md-2 ps-md-5 upi-txt-container">
               <h1 className="fw-bold upi-txt">
                 your payments come
                 <br />
@@ -229,7 +238,14 @@ function Pay() {
               </h4>
             </div>
             <div className="col-md-6 col-sm-12 d-flex justify-content-center  order-1 order-md-1 ps-0">
-              <video autoPlay muted loop width={"430px"} height={"230px"}>
+              <video
+                autoPlay
+                muted
+                loop
+                width={"430px"}
+                height={"230px"}
+                className="security-video"
+              >
                 <source src="/security-payments.mp4" />
               </video>
             </div>

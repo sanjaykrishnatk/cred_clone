@@ -28,9 +28,7 @@ function Pay() {
         <h1 className="m-0 ps-4 pe-4 p-md-0 text-center">
           make a statement
           <br />
-          <span className="sec-page-txt" style={{ fontSize: "100px" }}>
-            every time you pay
-          </span>
+          <span className="sec-page-txt">every time you pay</span>
         </h1>
         <h5 className="ps-5 pe-5 p-md-0 sec-page-sub-txt">
           scan & pay via UPI. earn assured rewards. claim collectibles. all

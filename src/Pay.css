@@ -218,6 +218,7 @@
 }
 @media (max-width: 680px) {
   .intro-text h1 {
+    font-family: medusa !important;
     font-size: 70px !important;
     line-height: 70px;
     display: block;
@@ -239,10 +240,12 @@
     display: none !important;
   }
   .sec-page h1 {
+    font-family: medusa !important;
     font-size: 52px !important;
     line-height: 46px !important;
   }
   .sec-page span {
+    font-family: medusa !important;
     font-size: 38px !important;
   }
   .sec-page-sub-txt {
@@ -253,6 +256,7 @@
     font-size: 50px;
     text-align: center;
     line-height: 45px;
+    font-family: medusa !important;
   }
   .feature-sub {
     font-size: 14px;
@@ -280,5 +284,6 @@
   .shopping-sub {
     font-size: 20px !important;
     line-height: 30px !important;
+    font-family: medusa !important;
   }
 }

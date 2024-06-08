@@ -43,12 +43,12 @@
 }
 @font-face {
   font-family: medusa;
-  src: url(./assets/times_new_roman.ttf);
+  src: url(./assets/NocturneSerifTest-ExtraBoldItalic.otf);
 }
 #intro-main {
   font-family: Gilroy !important;
   font-style: normal !important;
-  font-weight: 700 !important;
+  /* font-weight: 700 !important; */
   z-index: 10 !important;
   background-color: rgba(0, 0, 0, 0) !important;
 }
@@ -57,7 +57,7 @@
   font-family: medusa !important;
   font-size: 150px !important;
   font-style: italic;
-  font-weight: 900;
+  /* font-weight: 900; */
   line-height: 135px;
   text-align: center;
   letter-spacing: -0.02em;
@@ -85,7 +85,7 @@
   letter-spacing: -0.01em;
   color: rgb(210, 255, 209);
   font-style: italic;
-  font-weight: bold;
+  /* font-weight: bold; */
 }
 .sec-page-txt {
   font-family: medusa;
@@ -139,7 +139,7 @@
   opacity: 0.9;
   margin-left: -10px;
   padding-left: 10px;
-  font-weight: bold;
+  /* font-weight: bold; */
   font-style: italic;
 }
 .feature-sub {
@@ -171,12 +171,12 @@
 .shopping-sub {
   font-family: medusa !important;
   font-size: 54px !important;
-  font-weight: bold;
+  /* font-weight: bold; */
   font-style: italic;
 }
 .security-txt {
   font-family: medusa;
-  font-weight: bold;
+  /* font-weight: bold; */
   font-style: italic;
   font-size: 110px;
   line-height: 100px;
@@ -186,7 +186,7 @@
 }
 .security-txt span {
   font-family: medusa;
-  font-weight: bold;
+  /* font-weight: bold; */
   font-style: italic;
   opacity: 0.4;
   background-color: rgba(0, 0, 0, 0) !important;

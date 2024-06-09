@@ -178,8 +178,8 @@ function Pay() {
         <div className="col-md-1"></div>
         <div className="col-md-10 d-flex align-items-center justify-content-center">
           <div className="row d-flex justify-content-between feature-1 w-100 p-5">
-            <div className="col-md-6 col-sm-12 d-flex align-items-center order-2 order-md-1">
-              <video autoPlay muted loop className="feature-video v-2 ">
+            <div className="col-md-6 col-sm-12 d-flex align-items-center order-2 order-md-1 justify-content-center">
+              <video autoPlay muted loop className="feature-video v-2 ms-0">
                 <source src="/snp_feature_02.mp4" />
               </video>
             </div>

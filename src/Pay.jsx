@@ -13,8 +13,8 @@ function Pay() {
     transition: "all 0.6s cubic-bezier(0.76, 0, 0.24, 1) 0s",
     top: "0%",
     left: "50%",
-    width: "108.46px !important",
-    height: " 108.46px !important",
+    width: "108.46px",
+    height: " 108.46px",
     border: "2.58434px solid rgb(86, 249, 71)",
     borderRadius: "50%",
     marginRight: "10px",
@@ -396,7 +396,9 @@ function Pay() {
               <img
                 src="/icon-01.png"
                 alt="icon-01"
-                className="planets-icon"
+                className={`${
+                  pos1 == "middle" ? "planet-sm" : ""
+                } planets-icon`}
                 name={pos1}
                 onClick={(e) => handleImageChange(e, "greyish-snp-screen")}
                 style={getStyle(pos1)}
@@ -406,7 +408,9 @@ function Pay() {
               <img
                 src="/icon-02.png"
                 alt="icon-02"
-                className="planets-icon"
+                className={`${
+                  pos2 == "middle" ? "planet-sm" : ""
+                } planets-icon`}
                 name={pos2}
                 onClick={(e) => handleImageChange(e, "orange-snp-screen")}
                 style={getStyle(pos2)}
@@ -416,7 +420,9 @@ function Pay() {
               <img
                 src="/icon-03.png"
                 alt="icon-03"
-                className="planets-icon"
+                className={`${
+                  pos3 == "middle" ? "planet-sm" : ""
+                } planets-icon`}
                 name={pos3}
                 onClick={(e) => handleImageChange(e, "purple-snp-screen")}
                 style={getStyle(pos3)}

@@ -509,6 +509,10 @@
     width: 45.26px !important;
     height: 45.26px !important;
   }
+  .planet-sm {
+    width: 65.4px !important;
+    height: 65.4px !important;
+  }
 }
 
 /* .planet-1 {

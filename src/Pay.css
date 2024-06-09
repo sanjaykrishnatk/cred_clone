@@ -152,8 +152,9 @@
   margin-top: 50px;
 }
 .shopping,
-.upi {
-  margin-bottom: 230px;
+.upi,
+.personalize {
+  margin-bottom: 250px;
 }
 .security {
   margin-bottom: 250px;
@@ -208,6 +209,140 @@
   color: rgb(255, 255, 255);
   opacity: 0.7;
 }
+.personalize-txt {
+  font-family: medusa;
+  font-size: 110px;
+  line-height: 89px;
+  text-align: center;
+  letter-spacing: -0.01em;
+  color: rgb(210, 255, 209);
+}
+.personalize-sub-txt {
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: rgb(255, 255, 255);
+  opacity: 0.9;
+  margin-top: 80px;
+}
+.bg-change {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.bg-content {
+  transition: all 0.7s ease-out 0s;
+  position: absolute;
+  /* background-image: url(/lunar-orange.png); */
+  background-size: 85%;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  width: 100%;
+  height: 100%;
+  bottom: 10%;
+}
+.mobile-bg {
+  background-image: url(/iphone-model.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 354.52px !important;
+  height: 669.03px !important;
+  display: flex;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0) !important;
+}
+.phone-skin {
+  width: 272.54px;
+  height: 595.85px !important;
+  background-color: rgba(0, 0, 0, 0) !important;
+  /* margin-right: 20px; */
+}
+.planet-image {
+  position: absolute;
+  width: 100%;
+  height: 200px;
+  max-width: 500px !important;
+  z-index: 9999999;
+  bottom: -13% !important;
+  background-color: rgba(0, 0, 0, 0) !important;
+}
+/* .planet-1 {
+  transition: all 0.6s cubic-bezier(0.76, 0, 0.24, 1) 0s;
+  top: 32%;
+  left: 25%;
+  background-color: rgba(0, 0, 0, 0) !important;
+  width: 79.7px;
+  height: 79.7px;
+  border-radius: 50%;
+  margin-right: 10px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  border: 2.44962px solid rgb(255, 255, 255);
+  outline: none;
+  cursor: pointer;
+  transform-origin: center center;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+} */
+/* .planet-2 {
+  background-color: rgba(0, 0, 0, 0) !important;
+  top: 32%;
+  left: 25%;
+  width: 79.7px;
+  height: 79.7px;
+  border: 2.44962px solid rgb(255, 255, 255);
+  border-radius: 50%;
+  margin-right: 10px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  outline: none;
+  cursor: pointer;
+  transform-origin: center center;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+} */
+/* .planet-3 {
+  transition: all 0.6s cubic-bezier(0.76, 0, 0.24, 1) 0s;
+  top: 32%;
+  left: 75%;
+  background-color: rgba(0, 0, 0, 0) !important;
+  width: 79.7px;
+  height: 79.7px;
+  border-radius: 50%;
+  margin-right: 10px;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  border: 2.44962px solid rgb(255, 255, 255);
+  outline: none;
+  cursor: pointer;
+  transform-origin: center center;
+} */
+.planets-icon {
+  background-color: rgba(0, 0, 0, 0) !important;
+  height: 100%;
+  width: 100%;
+}
+
 @keyframes upDown {
   0% {
     transform: translateY(0px);
@@ -330,7 +465,63 @@
     text-align: center;
     letter-spacing: 0.01em;
   }
-  .upi {
+  .upi,
+  .personalize {
     margin-bottom: 70px;
   }
+  .personalize-txt {
+    font-size: 52px;
+    line-height: 46px;
+    max-width: 265px;
+  }
+  .personalize-sub-txt {
+    font-size: 14px;
+    max-width: 311px !important;
+    line-height: 22px;
+    letter-spacing: 0.01em;
+    margin-top: 50px;
+  }
+  .bg-content {
+    background-size: 230%;
+    bottom: 15%;
+  }
+  .mobile-bg {
+    width: 201.3px !important;
+    height: 379.88px !important;
+  }
+  .phone-skin {
+    width: 158.85px !important;
+    height: 339.76px !important;
+  }
+  .planet-image {
+    width: 65%;
+    bottom: 2% !important;
+  }
+  .planet-1,
+  .planet-2,
+  .planet-3 {
+    background-color: rgba(0, 0, 0, 0) !important;
+    width: 45.26px !important;
+    height: 45.26px !important;
+    margin-right: 5px !important;
+  }
+  .planets-icon {
+    width: 45.26px !important;
+    height: 45.26px !important;
+  }
 }
+
+/* .planet-1 {
+  width: 45.26px !important;
+  height: 45.26px !important;
+  margin-right: 5px !important;
+}
+.planet-3 {
+  width: 45.26px !important;
+  height: 45.26px !important;
+  margin-right: 5px !important;
+}
+.planets-icon {
+  width: 45.26px !important;
+  height: 45.26px !important;
+} */

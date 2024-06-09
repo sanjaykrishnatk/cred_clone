@@ -1,7 +1,119 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Pay.css";
-import { Col } from "react-bootstrap";
 function Pay() {
+  const [image, setImage] = useState("orange-snp-screen");
+  const [bg, setBg] = useState("lunar-orange");
+  const [img1, img1Clicked] = useState(false);
+  const [img2, img2Clicked] = useState(true);
+  const [img3, img3Clicked] = useState(false);
+  const [pos1, setPos1] = useState("left");
+  const [pos2, setPos2] = useState("middle");
+  const [pos3, setPos3] = useState("right");
+  const clickedImage = {
+    transition: "all 0.6s cubic-bezier(0.76, 0, 0.24, 1) 0s",
+    top: "0%",
+    left: "50%",
+    width: "108.46px !important",
+    height: " 108.46px !important",
+    border: "2.58434px solid rgb(86, 249, 71)",
+    borderRadius: "50%",
+    marginRight: "10px",
+    position: "absolute",
+    transform: "translate(-50%, -50%)",
+    outline: "none",
+    cursor: "pointer",
+    transformOrigin: "center center",
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+  };
+  const defaultStyle1 = {
+    transition: "all 0.6s cubic-bezier(0.76, 0, 0.24, 1) 0s",
+    top: "32%",
+    left: "25%",
+    backgroundColor: "rgba(0, 0, 0, 0)",
+    width: "79.7px",
+    height: "79.7px",
+    borderRadius: "50%",
+    marginRight: "10px",
+    position: "absolute",
+    transform: "translate(-50%, -50%)",
+    border: "2.44962px solid rgb(255, 255, 255)",
+    outline: "none",
+    cursor: "pointer",
+    transformOrigin: "center center",
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+  };
+  const defaultStyle3 = {
+    transition: "all 0.6s cubic-bezier(0.76, 0, 0.24, 1) 0s",
+    top: "32%",
+    left: "75%",
+    backgroundColor: "rgba(0, 0, 0, 0)",
+    width: "79.7px",
+    height: "79.7px",
+    borderRadius: "50%",
+    marginRight: "10px",
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    position: "absolute",
+    transform: "translate(-50%, -50%)",
+    border: "2.44962px solid rgb(255, 255, 255)",
+    outline: "none",
+    cursor: "pointer",
+    transformOrigin: "center center",
+  };
+
+  const handleImageChange = (e, image) => {
+    let position = e.target.name;
+    setImage(image);
+    if (image == "orange-snp-screen") {
+      if (img1) {
+        setPos1(position);
+      } else if (img3) {
+        setPos3(position);
+      }
+      setPos2("middle");
+      setBg("lunar-orange");
+      img2Clicked(true);
+      img1Clicked(false);
+      img3Clicked(false);
+    } else if (image == "greyish-snp-screen") {
+      if (img2) {
+        setPos2(position);
+      } else if (img3) {
+        setPos3(position);
+      }
+      setPos1("middle");
+      setBg("lunar-greyish");
+      img1Clicked(true);
+      img3Clicked(false);
+      img2Clicked(false);
+    } else {
+      if (img1) {
+        setPos1(position);
+      } else if (img2) {
+        setPos2(position);
+      }
+      setPos3("middle");
+      setBg("lunar-purple");
+      img3Clicked(true);
+      img2Clicked(false);
+      img1Clicked(false);
+    }
+  };
+  const getStyle = (position) => {
+    console.log(position);
+    if (position == "middle") {
+      return clickedImage;
+    } else if (position == "left") {
+      return defaultStyle1;
+    } else {
+      return defaultStyle3;
+    }
+  };
   return (
     <div className="pay-wrapper">
       <div className="pay-content d-flex flex-column align-items-center justify-content-center">
@@ -250,6 +362,68 @@ function Pay() {
           </div>
         </div>
         <div className="col-md-2"></div>
+      </div>
+      <div className="row ms-0 me-0 w-100 personalize">
+        <div className="col-md-2"></div>
+        <div className="col-md-8 d-flex flex-column align-items-center justify-content-center">
+          <h1 className="personalize-txt mb-0">meet your skin</h1>
+          <h4 className="personalize-sub-txt">
+            CRED pay is built to showcase you. your tastes. your wins. your
+            <br />
+            collections. explore the skins your scanner can wear. it might just
+            be what
+            <br />
+            you need to find yourself.
+          </h4>
+        </div>
+        <div className="col-md-2"></div>
+      </div>
+      <div className="row ms-0 me-0 w-100 bg-change">
+        <div
+          className="col-md-12 d-flex flex-column justify-content-center align-items-center bg-content"
+          style={{ backgroundImage: `url(/${bg}.png)` }}
+        >
+          <div className="mobile-bg">
+            <img
+              src={`/${image}.png`}
+              alt="phone-skin"
+              className="phone-skin"
+              style={{ transition: "all 0.8s ease-out 0s" }}
+            />
+          </div>
+          <div className="planet-image d-flex justify-content-center align-items-center">
+            <div className="planet-1">
+              <img
+                src="/icon-01.png"
+                alt="icon-01"
+                className="planets-icon"
+                name={pos1}
+                onClick={(e) => handleImageChange(e, "greyish-snp-screen")}
+                style={getStyle(pos1)}
+              />
+            </div>
+            <div className="planet-2">
+              <img
+                src="/icon-02.png"
+                alt="icon-02"
+                className="planets-icon"
+                name={pos2}
+                onClick={(e) => handleImageChange(e, "orange-snp-screen")}
+                style={getStyle(pos2)}
+              />
+            </div>
+            <div className="planet-3">
+              <img
+                src="/icon-03.png"
+                alt="icon-03"
+                className="planets-icon"
+                name={pos3}
+                onClick={(e) => handleImageChange(e, "purple-snp-screen")}
+                style={getStyle(pos3)}
+              />
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );

@@ -233,6 +233,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 180px;
 }
 .bg-content {
   transition: all 0.7s ease-out 0s;
@@ -370,6 +371,152 @@
   opacity: 0.5;
   margin-top: 19.5px;
   background-color: rgba(0, 0, 0, 0) !important;
+}
+.flairs {
+  margin-bottom: 130px;
+}
+.behold-txt {
+  font-family: Gilroy;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 37px;
+  letter-spacing: 23.32px;
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+  opacity: 0.98;
+}
+.small-line {
+  width: 25px;
+  border: 2px solid !important;
+  border-color: white !important;
+  margin-top: 37px;
+  opacity: 1 !important;
+}
+.flairs-txt {
+  font-family: medusa;
+  font-size: 249px;
+  line-height: 249px;
+  color: rgba(40, 88, 255, 0.8);
+  opacity: 0.89;
+}
+.flairs-txt span {
+  font-family: medusa;
+  font-style: italic;
+  font-size: 249px;
+  line-height: 249px;
+  color: rgba(40, 88, 255, 0.8);
+  opacity: 0.89;
+  background-color: rgba(0, 0, 0, 0) !important;
+}
+.flairs-content {
+  font-family: medusa;
+  font-size: 90px;
+  line-height: 80px;
+  letter-spacing: -2px;
+  white-space: pre-line;
+  color: rgb(51, 96, 252);
+}
+.perks-img {
+  width: 356.01px !important;
+  height: auto;
+  animation: 1s ease 0s infinite alternate none running perks-animation;
+}
+.perks-sub-txt,
+.scan-txt {
+  font-family: Gilroy;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 18px;
+  text-transform: uppercase;
+  letter-spacing: 0.29em;
+  color: rgb(255, 255, 255);
+  margin-top: 76px;
+  opacity: 0.9;
+}
+.perks-txt {
+  font-family: medusa;
+  font-weight: bolder;
+  font-style: italic;
+  font-size: 90px;
+  white-space: pre-line;
+  line-height: 80px;
+  letter-spacing: -0.01em;
+  margin-top: 21px;
+  color: rgb(235, 255, 10);
+  opacity: 0.9;
+}
+.perks-content-txt {
+  font-family: Gilroy;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0.02em;
+  max-width: 555.01px;
+  color: rgb(255, 255, 255);
+  margin-top: 50px;
+  opacity: 0.9;
+}
+.perks-img-2 {
+  width: 356.01px !important;
+  height: auto;
+  animation: 1s ease 0s infinite alternate none running perks-animation;
+  margin-top: 120px;
+}
+.perks-content-2 {
+  font-family: medusa;
+  font-style: italic;
+  font-size: 90px;
+  white-space: pre-line;
+  line-height: 80px;
+  letter-spacing: -0.01em;
+  margin-top: 31px;
+  color: rgb(94, 255, 185);
+  opacity: 0.9;
+}
+.perks-img-3 {
+  display: block;
+  width: 75vw;
+  max-width: 340px;
+  margin-bottom: 50px;
+  margin-top: 150px;
+}
+.perks-txt-2 {
+  font-family: medusa;
+  font-weight: bold;
+  font-style: italic;
+  color: rgb(255, 255, 255);
+  font-size: 88px;
+  line-height: 80px;
+  letter-spacing: -0.03em;
+  max-width: 550px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.know-more-btn {
+  margin-top: 50px;
+  margin-bottom: 150px;
+  width: 250px !important;
+  background-color: rgb(6, 194, 112) !important;
+  color: black;
+  font-family: Gilroy;
+  font-size: 19px !important;
+  letter-spacing: 2px !important;
+  line-height: 23px !important;
+  padding: 20px 34px !important;
+}
+.arrow {
+  background-color: rgba(0, 0, 0, 0) !important;
+}
+.arrow svg {
+  background-color: rgba(0, 0, 0, 0) !important;
+}
+
+@keyframes perks-animation {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(-15px);
+  }
 }
 @keyframes upDown {
   0% {
@@ -552,6 +699,81 @@
   .planet-sub-text {
     font-size: 12px;
     line-height: 15px;
+  }
+  .bg-change {
+    margin-bottom: 50px;
+  }
+  .behold-txt {
+    font-size: 20px;
+    line-height: 39px;
+    text-align: center;
+    letter-spacing: 0.5em;
+  }
+  .small-line {
+    margin-top: 5px;
+    border: 1px solid rgb(255, 255, 255) !important;
+  }
+  .flairs-txt {
+    font-size: 120px;
+    line-height: 120px;
+  }
+  .flairs-txt span {
+    font-size: 120px;
+    line-height: 120px;
+  }
+  .flair-img-1 {
+    width: 100% !important;
+  }
+  .flair-img-2 {
+    width: 349.73px !important;
+  }
+  .flairs-content {
+    font-size: 50px;
+    line-height: 42px;
+    letter-spacing: -0.01em;
+    text-align: center;
+  }
+  .flair-content-sub {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+  .perks-img {
+    width: 251.59px !important;
+  }
+  .perks-sub-txt {
+    font-size: 9px;
+    line-height: 11px;
+    letter-spacing: 0.25em;
+    margin-top: 55px;
+  }
+  .perks-txt {
+    font-size: 52px;
+    line-height: 46px;
+    margin-top: 12px;
+  }
+  .perks-content-txt {
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 0.01em;
+  }
+  .perks-img-2 {
+    width: 251.59px !important;
+    margin-top: 35px;
+  }
+  .perks-content-2 {
+    font-size: 52px;
+    line-height: 46px;
+    margin-top: 12px;
+  }
+  .perks-txt-2 {
+    font-size: 60px;
+    line-height: 52px;
+    max-width: 82vw;
+  }
+  .know-more-btn {
+    font-size: 16px !important;
+    line-height: 19px !important;
   }
 }
 

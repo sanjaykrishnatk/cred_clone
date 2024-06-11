@@ -435,6 +435,106 @@ function Pay() {
           <p className="planet-sub-text">TAP TO CHANGE ENVIRONMENT</p>
         </div>
       </div>
+      <div className="row ms-0 me-0 w-100 flairs">
+        <div className="col-12  d-flex flex-column justify-content-center align-items-center">
+          <h1 className="behold-txt">BEHOLD</h1>
+          <hr className="small-line" />
+          <h1 className="flairs-txt">
+            fla<span>irs</span>
+          </h1>
+          <img
+            src="/flairs_rotating.png"
+            alt="flairs-img"
+            style={{ width: "922px", height: "auto" }}
+            className="flair-img-1"
+          />
+          <img
+            src="/flairs-snp.png"
+            alt="flairs-snp"
+            style={{ width: "743.29px", height: "auto" }}
+            className="flair-img-2"
+          />
+          <div className="row d-flex w-100" style={{ marginTop: "125px" }}>
+            <div className="col-md-1"></div>
+            <div className="col-md-10">
+              <div className="row">
+                <div className="col-md-6 col-sm-12 d-flex justify-content-center align-items-center">
+                  <h1 className="flairs-content ms-md-4">
+                    designed to
+                    <br />
+                    be shown off
+                  </h1>
+                </div>
+                <div className="col-md-6 col-sm-12 flair-content-sub">
+                  <p className="upi-sub-txt">
+                    redeem coins to collect flairs. pin them
+                    <br />
+                    to your scanner. flaunt your good
+                    <br />
+                    taste.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="col-md-1"></div>
+          </div>
+        </div>
+      </div>
+      <div className="row ms-0 me-0 w-100 perks">
+        <div className="col-12 d-flex flex-column justify-content-center align-items-center ">
+          <img src="/perks.png" alt="perks-img" className="perks-img" />
+          <h6 className="perks-sub-txt">CREDIT CARD CHECKOUT</h6>
+          <h1 className="perks-txt text-center">
+            your perks
+            <br />
+            extend online
+          </h1>
+          <p className="perks-content-txt text-center">
+            select CRED pay while checking out from your favorite
+            <br />
+            online stores. the exclusive rewards you’ll unlock is not the
+            <br />
+            only reason to do it.
+          </p>
+          <img src="/boost.png" className="perks-img-2" alt="perks-img-2" />
+          <h6 className="perks-sub-txt">CRED BOOSTS</h6>
+          <h1 className="perks-content-2 text-center">
+            say hello
+            <br />
+            to boosts
+          </h1>
+          <p className="perks-content-txt text-center">
+            but skip the small talk. unlock boosts and get 120 minutes
+            <br />
+            to shop at up to 50% less on your favorite brands.
+          </p>
+          <img src="/pay-days.png" alt="perks-img-3" className="perks-img-3" />
+          <h1 className="perks-txt-2">
+            100% cashback.
+            <br />
+            every hour.
+          </h1>
+
+          <h6 className="scan-txt mt-0">ONLY VIA SCAN & PAY.</h6>
+          <button className="btn know-more-btn rounded-0 fw-bold">
+            KNOW MORE
+            <span className="arrow ms-2">
+              <svg
+                width="32"
+                height="13"
+                viewBox="0 0 32 13"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M1 5.49994H0V7.49994H1V5.49994ZM1 7.49994H30.3308V5.49994H1V7.49994ZM24.5385 4.34528e-08C24.5385 4.13653 27.8735 7.5 32 7.5V5.5C28.9893 5.5 26.5385 3.04317 26.5385 -4.34528e-08L24.5385 4.34528e-08ZM32 5.5C27.8735 5.5 24.5383 8.86343 24.5383 13H26.5383C26.5383 9.95686 28.9892 7.5 32 7.5V5.5Z"
+                  fill="black"
+                ></path>
+              </svg>
+            </span>
+          </button>
+        </div>
+      </div>
     </div>
   );
 }

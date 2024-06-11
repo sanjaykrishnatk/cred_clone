@@ -431,6 +431,10 @@ function Pay() {
           </div>
         </div>
       </div>
+      <div className="planet-caption  d-flex flex-column justify-content-center align-items-center">
+        <h6 className="planet-text">STELLAR</h6>
+        <p className="planet-sub-text">TAP TO CHANGE ENVIRONMENT</p>
+      </div>
     </div>
   );
 }

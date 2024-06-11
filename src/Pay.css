@@ -342,7 +342,27 @@
   height: 100%;
   width: 100%;
 }
-
+.planet-text {
+  font-family: Gilroy;
+  font-weight: bold;
+  font-size: 19.4276px;
+  line-height: 39px;
+  letter-spacing: 0.5em;
+  color: rgb(255, 255, 255);
+  opacity: 0.9;
+  margin-top: -50px !important;
+}
+.planet-sub-text {
+  font-family: Gilroy;
+  font-size: 11.6566px;
+  font-weight: bold;
+  line-height: 15px;
+  text-align: center;
+  letter-spacing: 0.18em;
+  color: rgb(70, 255, 53);
+  opacity: 0.5;
+  margin-top: 19.5px;
+}
 @keyframes upDown {
   0% {
     transform: translateY(0px);
@@ -381,7 +401,7 @@
   }
   .sec-page span {
     font-family: medusa !important;
-    font-size: 38px !important;
+    font-size: 52px !important;
   }
   .sec-page-sub-txt {
     margin-top: 50px !important;

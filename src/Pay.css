@@ -342,6 +342,12 @@
   height: 100%;
   width: 100%;
 }
+.planet-caption {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0) !important;
+  bottom: -5% !important;
+  z-index: 50;
+}
 .planet-text {
   font-family: Gilroy;
   font-weight: bold;
@@ -351,6 +357,7 @@
   color: rgb(255, 255, 255);
   opacity: 0.9;
   margin-top: -50px !important;
+  background-color: rgba(0, 0, 0, 0) !important;
 }
 .planet-sub-text {
   font-family: Gilroy;
@@ -362,6 +369,7 @@
   color: rgb(70, 255, 53);
   opacity: 0.5;
   margin-top: 19.5px;
+  background-color: rgba(0, 0, 0, 0) !important;
 }
 @keyframes upDown {
   0% {
@@ -532,6 +540,18 @@
   .planet-sm {
     width: 65.4px !important;
     height: 65.4px !important;
+  }
+  .planet-caption {
+    z-index: 50 !important;
+    bottom: 30% !important;
+  }
+  .planet-text {
+    font-size: 15px;
+    line-height: 39px;
+  }
+  .planet-sub-text {
+    font-size: 12px;
+    line-height: 15px;
   }
 }
 

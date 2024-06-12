@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import videoBg from "./assets/hero-desktop.mp4";
 import mobileBg from "./assets/hero-mobile.mp4";
 import Menu from "./Menu";
+import Banner from "./Banner";
 import "./Home.css";
 
 function Home() {
@@ -18,6 +19,7 @@ function Home() {
 
   return (
     <div className="main">
+      <Banner />
       {!isMobile && (
         <video className="bgVideo w-100" muted autoPlay loop>
           <source src={videoBg} />

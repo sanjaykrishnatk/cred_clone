@@ -131,12 +131,7 @@ function Pay() {
             has arrived
           </h1>
         </div>
-        <div className="dump">
-          <div className="sc-19yl9ou-4 eXLbSZ">
-            <span>CRED </span>pay <br />
-            has arrived
-          </div>
-        </div>
+        <div className="dump" style={{ minHeight: "50px" }}></div>
         <img src="/rainbow-curve-02.png" alt="rainbow-img" id="rainbow-img" />
       </div>
       <div className="row sec-page m-0 p-0 w-100 d-flex flex-column justify-content-center align-items-center text-light">

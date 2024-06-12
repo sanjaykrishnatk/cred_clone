@@ -1,5 +1,8 @@
 import React, { useState } from "react";
 import "./Pay.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCircle } from "@fortawesome/free-solid-svg-icons";
+
 function Pay() {
   const [image, setImage] = useState("orange-snp-screen");
   const [bg, setBg] = useState("lunar-orange");
@@ -481,7 +484,7 @@ function Pay() {
         </div>
       </div>
       <div className="row ms-0 me-0 w-100 perks">
-        <div className="col-12 d-flex flex-column justify-content-center align-items-center ">
+        <div className="col-12 d-flex flex-column justify-content-center align-items-center p-0">
           <img src="/perks.png" alt="perks-img" className="perks-img" />
           <h6 className="perks-sub-txt">CREDIT CARD CHECKOUT</h6>
           <h1 className="perks-txt text-center">
@@ -533,6 +536,653 @@ function Pay() {
               </svg>
             </span>
           </button>
+          <div className="scroll-container">
+            <div className="scroll-text d-flex">
+              <h3>
+                <FontAwesomeIcon
+                  icon={faCircle}
+                  style={{
+                    color: "#000000",
+                    backgroundColor: "rgba(0,0,0,0)",
+                    fontSize: "5px",
+                  }}
+                  className="circle-icon"
+                />
+                DOWNLOAD CRED
+              </h3>
+              <h3>
+                <FontAwesomeIcon
+                  icon={faCircle}
+                  style={{
+                    color: "#000000",
+                    backgroundColor: "rgba(0,0,0,0)",
+                    fontSize: "5px",
+                  }}
+                  className="circle-icon"
+                />
+                DOWNLOAD CRED
+              </h3>{" "}
+              <h3>
+                <FontAwesomeIcon
+                  icon={faCircle}
+                  style={{
+                    color: "#000000",
+                    backgroundColor: "rgba(0,0,0,0)",
+                    fontSize: "5px",
+                  }}
+                  className="circle-icon"
+                />
+                DOWNLOAD CRED
+              </h3>{" "}
+              <h3>
+                <FontAwesomeIcon
+                  icon={faCircle}
+                  style={{
+                    color: "#000000",
+                    backgroundColor: "rgba(0,0,0,0)",
+                    fontSize: "5px",
+                  }}
+                  className="circle-icon"
+                />
+                DOWNLOAD CRED
+              </h3>{" "}
+              <h3>
+                <FontAwesomeIcon
+                  icon={faCircle}
+                  style={{
+                    color: "#000000",
+                    backgroundColor: "rgba(0,0,0,0)",
+                    fontSize: "5px",
+                  }}
+                  className="circle-icon"
+                />
+                DOWNLOAD CRED
+              </h3>{" "}
+              <h3>
+                <FontAwesomeIcon
+                  icon={faCircle}
+                  style={{
+                    color: "#000000",
+                    backgroundColor: "rgba(0,0,0,0)",
+                    fontSize: "5px",
+                  }}
+                  className="circle-icon"
+                />
+                DOWNLOAD CRED
+              </h3>{" "}
+              <h3>
+                <FontAwesomeIcon
+                  icon={faCircle}
+                  style={{
+                    color: "#000000",
+                    backgroundColor: "rgba(0,0,0,0)",
+                    fontSize: "5px",
+                  }}
+                  className="circle-icon"
+                />
+                DOWNLOAD CRED
+              </h3>{" "}
+              <h3>
+                <FontAwesomeIcon
+                  icon={faCircle}
+                  style={{
+                    color: "#000000",
+                    backgroundColor: "rgba(0,0,0,0)",
+                    fontSize: "5px",
+                  }}
+                  className="circle-icon"
+                />
+                DOWNLOAD CRED
+              </h3>{" "}
+              <h3>
+                <FontAwesomeIcon
+                  icon={faCircle}
+                  style={{
+                    color: "#000000",
+                    backgroundColor: "rgba(0,0,0,0)",
+                    fontSize: "5px",
+                  }}
+                  className="circle-icon"
+                />
+                DOWNLOAD CRED
+              </h3>{" "}
+              <h3>
+                <FontAwesomeIcon
+                  icon={faCircle}
+                  style={{
+                    color: "#000000",
+                    backgroundColor: "rgba(0,0,0,0)",
+                    fontSize: "5px",
+                  }}
+                  className="circle-icon"
+                />
+                DOWNLOAD CRED
+              </h3>{" "}
+              <h3>
+                <FontAwesomeIcon
+                  icon={faCircle}
+                  style={{
+                    color: "#000000",
+                    backgroundColor: "rgba(0,0,0,0)",
+                    fontSize: "5px",
+                  }}
+                  className="circle-icon"
+                />
+                DOWNLOAD CRED
+              </h3>{" "}
+              <h3>
+                <FontAwesomeIcon
+                  icon={faCircle}
+                  style={{
+                    color: "#000000",
+                    backgroundColor: "rgba(0,0,0,0)",
+                    fontSize: "5px",
+                  }}
+                  className="circle-icon"
+                />
+                DOWNLOAD CRED
+              </h3>{" "}
+              <h3>
+                <FontAwesomeIcon
+                  icon={faCircle}
+                  style={{
+                    color: "#000000",
+                    backgroundColor: "rgba(0,0,0,0)",
+                    fontSize: "5px",
+                  }}
+                  className="circle-icon"
+                />
+                DOWNLOAD CRED
+              </h3>{" "}
+              <h3>
+                <FontAwesomeIcon
+                  icon={faCircle}
+                  style={{
+                    color: "#000000",
+                    backgroundColor: "rgba(0,0,0,0)",
+                    fontSize: "5px",
+                  }}
+                  className="circle-icon"
+                />
+                DOWNLOAD CRED
+              </h3>{" "}
+              <h3>
+                <FontAwesomeIcon
+                  icon={faCircle}
+                  style={{
+                    color: "#000000",
+                    backgroundColor: "rgba(0,0,0,0)",
+                    fontSize: "5px",
+                  }}
+                  className="circle-icon"
+                />
+                DOWNLOAD CRED
+              </h3>{" "}
+              <h3>
+                <FontAwesomeIcon
+                  icon={faCircle}
+                  style={{
+                    color: "#000000",
+                    backgroundColor: "rgba(0,0,0,0)",
+                    fontSize: "5px",
+                  }}
+                  className="circle-icon"
+                />
+                DOWNLOAD CRED
+              </h3>{" "}
+              <h3>
+                <FontAwesomeIcon
+                  icon={faCircle}
+                  style={{
+                    color: "#000000",
+                    backgroundColor: "rgba(0,0,0,0)",
+                    fontSize: "5px",
+                  }}
+                  className="circle-icon"
+                />
+                DOWNLOAD CRED
+              </h3>{" "}
+              <h3>
+                <FontAwesomeIcon
+                  icon={faCircle}
+                  style={{
+                    color: "#000000",
+                    backgroundColor: "rgba(0,0,0,0)",
+                    fontSize: "5px",
+                  }}
+                  className="circle-icon"
+                />
+                DOWNLOAD CRED
+              </h3>{" "}
+              <h3>
+                <FontAwesomeIcon
+                  icon={faCircle}
+                  style={{
+                    color: "#000000",
+                    backgroundColor: "rgba(0,0,0,0)",
+                    fontSize: "5px",
+                  }}
+                  className="circle-icon"
+                />
+                DOWNLOAD CRED
+              </h3>{" "}
+              <h3>
+                <FontAwesomeIcon
+                  icon={faCircle}
+                  style={{
+                    color: "#000000",
+                    backgroundColor: "rgba(0,0,0,0)",
+                    fontSize: "5px",
+                  }}
+                  className="circle-icon"
+                />
+                DOWNLOAD CRED
+              </h3>{" "}
+              <h3>
+                <FontAwesomeIcon
+                  icon={faCircle}
+                  style={{
+                    color: "#000000",
+                    backgroundColor: "rgba(0,0,0,0)",
+                    fontSize: "5px",
+                  }}
+                  className="circle-icon"
+                />
+                DOWNLOAD CRED
+              </h3>{" "}
+              <h3>
+                <FontAwesomeIcon
+                  icon={faCircle}
+                  style={{
+                    color: "#000000",
+                    backgroundColor: "rgba(0,0,0,0)",
+                    fontSize: "5px",
+                  }}
+                  className="circle-icon"
+                />
+                DOWNLOAD CRED
+              </h3>{" "}
+              <h3>
+                <FontAwesomeIcon
+                  icon={faCircle}
+                  style={{
+                    color: "#000000",
+                    backgroundColor: "rgba(0,0,0,0)",
+                    fontSize: "5px",
+                  }}
+                  className="circle-icon"
+                />
+                DOWNLOAD CRED
+              </h3>{" "}
+              <h3>
+                <FontAwesomeIcon
+                  icon={faCircle}
+                  style={{
+                    color: "#000000",
+                    backgroundColor: "rgba(0,0,0,0)",
+                    fontSize: "5px",
+                  }}
+                  className="circle-icon"
+                />
+                DOWNLOAD CRED
+              </h3>{" "}
+              <h3>
+                <FontAwesomeIcon
+                  icon={faCircle}
+                  style={{
+                    color: "#000000",
+                    backgroundColor: "rgba(0,0,0,0)",
+                    fontSize: "5px",
+                  }}
+                  className="circle-icon"
+                />
+                DOWNLOAD CRED
+              </h3>{" "}
+              <h3>
+                <FontAwesomeIcon
+                  icon={faCircle}
+                  style={{
+                    color: "#000000",
+                    backgroundColor: "rgba(0,0,0,0)",
+                    fontSize: "5px",
+                  }}
+                  className="circle-icon"
+                />
+                DOWNLOAD CRED
+              </h3>{" "}
+              <h3>
+                <FontAwesomeIcon
+                  icon={faCircle}
+                  style={{
+                    color: "#000000",
+                    backgroundColor: "rgba(0,0,0,0)",
+                    fontSize: "5px",
+                  }}
+                  className="circle-icon"
+                />
+                DOWNLOAD CRED
+              </h3>{" "}
+              <h3>
+                <FontAwesomeIcon
+                  icon={faCircle}
+                  style={{
+                    color: "#000000",
+                    backgroundColor: "rgba(0,0,0,0)",
+                    fontSize: "5px",
+                  }}
+                  className="circle-icon"
+                />
+                DOWNLOAD CRED
+              </h3>{" "}
+              <h3>
+                <FontAwesomeIcon
+                  icon={faCircle}
+                  style={{
+                    color: "#000000",
+                    backgroundColor: "rgba(0,0,0,0)",
+                    fontSize: "5px",
+                  }}
+                  className="circle-icon"
+                />
+                DOWNLOAD CRED
+              </h3>{" "}
+              <h3>
+                <FontAwesomeIcon
+                  icon={faCircle}
+                  style={{
+                    color: "#000000",
+                    backgroundColor: "rgba(0,0,0,0)",
+                    fontSize: "5px",
+                  }}
+                  className="circle-icon"
+                />
+                DOWNLOAD CRED
+              </h3>{" "}
+              <h3>
+                <FontAwesomeIcon
+                  icon={faCircle}
+                  style={{
+                    color: "#000000",
+                    backgroundColor: "rgba(0,0,0,0)",
+                    fontSize: "5px",
+                  }}
+                  className="circle-icon"
+                />
+                DOWNLOAD CRED
+              </h3>{" "}
+              <h3>
+                <FontAwesomeIcon
+                  icon={faCircle}
+                  style={{
+                    color: "#000000",
+                    backgroundColor: "rgba(0,0,0,0)",
+                    fontSize: "5px",
+                  }}
+                  className="circle-icon"
+                />
+                DOWNLOAD CRED
+              </h3>{" "}
+              <h3>
+                <FontAwesomeIcon
+                  icon={faCircle}
+                  style={{
+                    color: "#000000",
+                    backgroundColor: "rgba(0,0,0,0)",
+                    fontSize: "5px",
+                  }}
+                  className="circle-icon"
+                />
+                DOWNLOAD CRED
+              </h3>{" "}
+              <h3>
+                <FontAwesomeIcon
+                  icon={faCircle}
+                  style={{
+                    color: "#000000",
+                    backgroundColor: "rgba(0,0,0,0)",
+                    fontSize: "5px",
+                  }}
+                  className="circle-icon"
+                />
+                DOWNLOAD CRED
+              </h3>{" "}
+              <h3>
+                <FontAwesomeIcon
+                  icon={faCircle}
+                  style={{
+                    color: "#000000",
+                    backgroundColor: "rgba(0,0,0,0)",
+                    fontSize: "5px",
+                  }}
+                  className="circle-icon"
+                />
+                DOWNLOAD CRED
+              </h3>{" "}
+              <h3>
+                <FontAwesomeIcon
+                  icon={faCircle}
+                  style={{
+                    color: "#000000",
+                    backgroundColor: "rgba(0,0,0,0)",
+                    fontSize: "5px",
+                  }}
+                  className="circle-icon"
+                />
+                DOWNLOAD CRED
+              </h3>{" "}
+              <h3>
+                <FontAwesomeIcon
+                  icon={faCircle}
+                  style={{
+                    color: "#000000",
+                    backgroundColor: "rgba(0,0,0,0)",
+                    fontSize: "5px",
+                  }}
+                  className="circle-icon"
+                />
+                DOWNLOAD CRED
+              </h3>{" "}
+              <h3>
+                <FontAwesomeIcon
+                  icon={faCircle}
+                  style={{
+                    color: "#000000",
+                    backgroundColor: "rgba(0,0,0,0)",
+                    fontSize: "5px",
+                  }}
+                  className="circle-icon"
+                />
+                DOWNLOAD CRED
+              </h3>{" "}
+              <h3>
+                <FontAwesomeIcon
+                  icon={faCircle}
+                  style={{
+                    color: "#000000",
+                    backgroundColor: "rgba(0,0,0,0)",
+                    fontSize: "5px",
+                  }}
+                  className="circle-icon"
+                />
+                DOWNLOAD CRED
+              </h3>{" "}
+              <h3>
+                <FontAwesomeIcon
+                  icon={faCircle}
+                  style={{
+                    color: "#000000",
+                    backgroundColor: "rgba(0,0,0,0)",
+                    fontSize: "5px",
+                  }}
+                  className="circle-icon"
+                />
+                DOWNLOAD CRED
+              </h3>{" "}
+              <h3>
+                <FontAwesomeIcon
+                  icon={faCircle}
+                  style={{
+                    color: "#000000",
+                    backgroundColor: "rgba(0,0,0,0)",
+                    fontSize: "5px",
+                  }}
+                  className="circle-icon"
+                />
+                DOWNLOAD CRED
+              </h3>{" "}
+              <h3>
+                <FontAwesomeIcon
+                  icon={faCircle}
+                  style={{
+                    color: "#000000",
+                    backgroundColor: "rgba(0,0,0,0)",
+                    fontSize: "5px",
+                  }}
+                  className="circle-icon"
+                />
+                DOWNLOAD CRED
+              </h3>{" "}
+              <h3>
+                <FontAwesomeIcon
+                  icon={faCircle}
+                  style={{
+                    color: "#000000",
+                    backgroundColor: "rgba(0,0,0,0)",
+                    fontSize: "5px",
+                  }}
+                  className="circle-icon"
+                />
+                DOWNLOAD CRED
+              </h3>{" "}
+              <h3>
+                <FontAwesomeIcon
+                  icon={faCircle}
+                  style={{
+                    color: "#000000",
+                    backgroundColor: "rgba(0,0,0,0)",
+                    fontSize: "5px",
+                  }}
+                  className="circle-icon"
+                />
+                DOWNLOAD CRED
+              </h3>{" "}
+              <h3>
+                <FontAwesomeIcon
+                  icon={faCircle}
+                  style={{
+                    color: "#000000",
+                    backgroundColor: "rgba(0,0,0,0)",
+                    fontSize: "5px",
+                  }}
+                  className="circle-icon"
+                />
+                DOWNLOAD CRED
+              </h3>{" "}
+              <h3>
+                <FontAwesomeIcon
+                  icon={faCircle}
+                  style={{
+                    color: "#000000",
+                    backgroundColor: "rgba(0,0,0,0)",
+                    fontSize: "5px",
+                  }}
+                  className="circle-icon"
+                />
+                DOWNLOAD CRED
+              </h3>{" "}
+              <h3>
+                <FontAwesomeIcon
+                  icon={faCircle}
+                  style={{
+                    color: "#000000",
+                    backgroundColor: "rgba(0,0,0,0)",
+                    fontSize: "5px",
+                  }}
+                  className="circle-icon"
+                />
+                DOWNLOAD CRED
+              </h3>{" "}
+              <h3>
+                <FontAwesomeIcon
+                  icon={faCircle}
+                  style={{
+                    color: "#000000",
+                    backgroundColor: "rgba(0,0,0,0)",
+                    fontSize: "5px",
+                  }}
+                  className="circle-icon"
+                />
+                DOWNLOAD CRED
+              </h3>{" "}
+              <h3>
+                <FontAwesomeIcon
+                  icon={faCircle}
+                  style={{
+                    color: "#000000",
+                    backgroundColor: "rgba(0,0,0,0)",
+                    fontSize: "5px",
+                  }}
+                  className="circle-icon"
+                />
+                DOWNLOAD CRED
+              </h3>{" "}
+              <h3>
+                <FontAwesomeIcon
+                  icon={faCircle}
+                  style={{
+                    color: "#000000",
+                    backgroundColor: "rgba(0,0,0,0)",
+                    fontSize: "5px",
+                  }}
+                  className="circle-icon"
+                />
+                DOWNLOAD CRED
+              </h3>{" "}
+              <h3>
+                <FontAwesomeIcon
+                  icon={faCircle}
+                  style={{
+                    color: "#000000",
+                    backgroundColor: "rgba(0,0,0,0)",
+                    fontSize: "5px",
+                  }}
+                  className="circle-icon"
+                />
+                DOWNLOAD CRED
+              </h3>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="row ms-0 me-0 w-100 footer">
+        <div className="col-md-1"></div>
+        <div className="col-md-10 col-sm-12 d-flex flex-column">
+          <div className="row">
+            <h1>
+              experience payments for the top 1%.
+              <br />
+              access <span className="cred-pay-txt">CRED pay</span> on the app.
+            </h1>
+          </div>
+          <div className="row links-section ps-3 pe-2">
+            <div className="col-12 d-flex justify-content-between w-100 p-0">
+              <div className="footer-1 d-flex justify-content-center align-items-center">
+                <h6 className="footer-txt">privacy policy &nbsp;&nbsp;|</h6>
+                <h6 className="footer-txt">
+                  terms and conditions &nbsp;&nbsp;|
+                </h6>
+                <h6 className="footer-txt">security</h6>
+              </div>
+              <div className="footer-2">
+                <img
+                  src="cred-footer-logo.png"
+                  alt="cred-footer-logo"
+                  className="cred-footer-logo"
+                />
+              </div>
+            </div>
+            <div className="col-md-1"></div>
+          </div>
         </div>
       </div>
     </div>

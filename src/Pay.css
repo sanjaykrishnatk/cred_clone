@@ -509,6 +509,86 @@
 .arrow svg {
   background-color: rgba(0, 0, 0, 0) !important;
 }
+.scroll-container {
+  background-color: rgb(61, 255, 42) !important;
+  overflow: hidden;
+  white-space: nowrap;
+  text-align: center;
+  width: 100%;
+  position: relative;
+}
+
+.scroll-text {
+  background-color: rgb(61, 255, 42) !important;
+  display: inline-block;
+  white-space: nowrap;
+  animation: scroll-left 20s linear infinite;
+}
+.scroll-text h3 {
+  font-family: "Overpass Mono", monospace !important;
+  background-color: rgb(61, 255, 42) !important;
+  display: inline-block;
+  margin: 0 15px;
+  font-size: 18px !important;
+  letter-spacing: 2px;
+  line-height: 21px !important;
+
+  display: flex;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  padding: 10px 0;
+}
+.circle-icon {
+  margin-top: 5px !important;
+  margin-right: 10px;
+}
+.footer {
+  margin-bottom: 80px;
+  margin-top: 150px !important;
+}
+.footer h1 {
+  font-family: medusa;
+  font-style: italic;
+  font-size: 55px;
+  line-height: 66px;
+  letter-spacing: -0.02em;
+  max-width: 756px;
+  color: white;
+  white-space: pre-line;
+}
+.cred-pay-txt {
+  color: rgb(61, 255, 42) !important;
+  font-family: medusa;
+
+  font-style: italic;
+}
+.links-section {
+  margin-top: 150px !important;
+}
+.footer-txt {
+  font-family: Gilroy;
+  outline: none;
+  cursor: pointer;
+  font-size: 20px;
+  line-height: 15px;
+  letter-spacing: 0.2px;
+  margin-right: 12px;
+  color: rgb(255, 255, 255);
+  opacity: 0.7;
+}
+.cred-footer-logo {
+  width: 67.96px;
+  height: 92.3px;
+}
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-1500px);
+  }
+}
 
 @keyframes perks-animation {
   0% {
@@ -774,6 +854,43 @@
   .know-more-btn {
     font-size: 16px !important;
     line-height: 19px !important;
+  }
+  .scroll-text h3 {
+    font-size: 14px !important;
+    line-height: 18px !important;
+  }
+  .footer {
+    padding: 56px 38px 65px 40px;
+    margin-top: 0 !important;
+  }
+  .footer h1 {
+    font-size: 28px;
+    line-height: 31px;
+    max-width: 266px;
+    margin-bottom: 100px;
+    text-align: left;
+  }
+  .footer span {
+    font-size: 28px;
+    line-height: 31px;
+    max-width: 266px;
+    margin-bottom: 100px;
+    text-align: left;
+  }
+  .links-section {
+    margin-top: 0 !important;
+  }
+  .footer-txt {
+    font-size: 9px;
+    line-height: 14px;
+    margin-right: 5px;
+    letter-spacing: 0.2px;
+    color: rgb(255, 255, 255);
+    opacity: 0.7;
+  }
+  .cred-footer-logo {
+    width: 43px;
+    height: 55.43px;
   }
 }
 

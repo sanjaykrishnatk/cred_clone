@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Container, Navbar, Offcanvas } from "react-bootstrap";
 import Hamburger from "hamburger-react";
 import "./Menu.css";
+import { Link } from "react-router-dom";
 
 function Menu() {
   const [showOffcanvas, setShowOffcanvas] = useState(false);
@@ -325,7 +326,15 @@ function Menu() {
                             alt="snp-logo"
                             className="utility-imgs"
                           />
-                          <h4 className="utility-headers b-0">SCAN AND PAY</h4>
+                          <Link
+                            to={"/cred-pay"}
+                            style={{ textDecoration: "none" }}
+                          >
+                            {" "}
+                            <h4 className="utility-headers b-0">
+                              SCAN AND PAY
+                            </h4>
+                          </Link>
                         </div>
                       </div>
                     </div>

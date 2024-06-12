@@ -4,6 +4,7 @@ import mobileBg from "./assets/hero-mobile.mp4";
 import Menu from "./Menu";
 import Banner from "./Banner";
 import "./Home.css";
+import { Link } from "react-router-dom";
 
 function Home() {
   const [isMobile, setIsMobile] = useState(false);

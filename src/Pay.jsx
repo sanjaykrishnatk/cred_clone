@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./Pay.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircle } from "@fortawesome/free-solid-svg-icons";
-
+import Lenis from "lenis";
 function Pay() {
   const [image, setImage] = useState("orange-snp-screen");
   const [bg, setBg] = useState("lunar-orange");
@@ -12,6 +12,18 @@ function Pay() {
   const [pos1, setPos1] = useState("left");
   const [pos2, setPos2] = useState("middle");
   const [pos3, setPos3] = useState("right");
+  const lenis = new Lenis();
+
+  lenis.on("scroll", (e) => {
+    console.log(e);
+  });
+
+  function raf(time) {
+    lenis.raf(time);
+    requestAnimationFrame(raf);
+  }
+
+  requestAnimationFrame(raf);
   const clickedImage = {
     transition: "all 0.6s cubic-bezier(0.76, 0, 0.24, 1) 0s",
     top: "0%",

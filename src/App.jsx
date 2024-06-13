@@ -6,7 +6,20 @@ import Banner from "./Banner";
 import Pay from "./Pay";
 import "./../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import { Route, Routes } from "react-router-dom";
+import Lenis from "lenis";
 function App() {
+  const lenis = new Lenis();
+
+  lenis.on("scroll", (e) => {
+    console.log(e);
+  });
+
+  function raf(time) {
+    lenis.raf(time);
+    requestAnimationFrame(raf);
+  }
+
+  requestAnimationFrame(raf);
   return (
     <div id="app-main">
       {/* <Banner />

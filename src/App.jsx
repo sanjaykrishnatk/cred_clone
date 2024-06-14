@@ -10,18 +10,18 @@ import Lenis from "lenis";
 import Section_2 from "./Section_2.jsx";
 
 function App() {
-  const lenis = new Lenis();
+  // const lenis = new Lenis();
 
-  lenis.on("scroll", (e) => {
-    console.log(e);
-  });
+  // lenis.on("scroll", (e) => {
+  //   console.log(e);
+  // });
 
-  function raf(time) {
-    lenis.raf(time);
-    requestAnimationFrame(raf);
-  }
+  // function raf(time) {
+  //   lenis.raf(time);
+  //   requestAnimationFrame(raf);
+  // }
 
-  requestAnimationFrame(raf);
+  // requestAnimationFrame(raf);
   return (
     <div id="app-main">
       {/* <Banner />

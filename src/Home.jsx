@@ -21,7 +21,7 @@ function Home() {
 
   return (
     <div className="main">
-      <Banner />
+      <Banner id="banner-container" />
       {!isMobile && (
         <video className="bgVideo w-100" muted autoPlay loop>
           <source src={videoBg} />

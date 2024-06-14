@@ -9,7 +9,7 @@ function Section_2() {
     let t1 = gsap.timeline({
       scrollTrigger: {
         trigger: ".section-2-content",
-        start: "40% 50%",
+        start: "30% 50%",
         end: "100% 50%",
         scrub: 20,
       },
@@ -73,7 +73,7 @@ function Section_2() {
       <div className="row section-2-content">
         <h1 className="section-2-header">NOT EVERYONE MAKES IT IN.</h1>
         <div className="col-md-3"></div>
-        <div className="col-md-6 d-flex">
+        <div className="col-md-6 d-flex section-2-wrapper">
           <div className="section-2-txt">
             the story of CRED
             <br />

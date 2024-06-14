@@ -50,6 +50,10 @@ max-width: 80%;
 width: 100%; */
 
 @media (max-width: 768px) {
+  #banner-container,
+  .banner-main {
+    display: none !important;
+  }
   .content h1 {
     font-family: denton;
     font-size: 52px;

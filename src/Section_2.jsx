@@ -6,10 +6,11 @@ gsap.registerPlugin(ScrollTrigger);
 
 function Section_2() {
   useEffect(() => {
+    const isMobile = window.matchMedia("(max-width: 768px)").matches;
     let t1 = gsap.timeline({
       scrollTrigger: {
         trigger: ".section-2-content",
-        start: "0% 50%",
+        start: isMobile ? "30% 50%" : "0% 50%",
         end: "100% 50%",
         scrub: 20,
       },

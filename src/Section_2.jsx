@@ -3,8 +3,6 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import "./Section_2.css";
 gsap.registerPlugin(ScrollTrigger);
-ScrollTrigger.normalizeScroll(true);
-
 function Section_2() {
   useEffect(() => {
     const isMobile = window.matchMedia("(max-width: 768px)").matches;

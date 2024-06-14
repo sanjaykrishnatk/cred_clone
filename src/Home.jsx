@@ -3,6 +3,7 @@ import videoBg from "./assets/hero-desktop.mp4";
 import mobileBg from "./assets/hero-mobile.mp4";
 import Menu from "./Menu";
 import Banner from "./Banner";
+import Section_2 from "./Section_2";
 import "./Home.css";
 import { Link } from "react-router-dom";
 import Lenis from "lenis";
@@ -59,6 +60,7 @@ function Home() {
           trustworthy to make financial progress
         </p>
       </div>
+      <Section_2 />
     </div>
   );
 }

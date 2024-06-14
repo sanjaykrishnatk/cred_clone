@@ -72,7 +72,20 @@ html.lenis body {
   color: white;
   text-wrap: nowrap;
 }
-
+.section-2-header {
+  position: relative;
+  left: 25%;
+  font-family: Gilroy;
+  font-size: 27px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 36px;
+  letter-spacing: 6px;
+  text-align: left;
+  color: rgb(255, 255, 255);
+  margin-top: 200px !important;
+  margin-bottom: 70px;
+}
 @media (max-width: 680px) {
   .section-2-txt,
   .section-2-txt-copy h1 {

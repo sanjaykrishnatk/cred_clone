@@ -26,11 +26,10 @@ function App() {
     <div id="app-main">
       {/* <Banner />
       <Home /> */}
-      {/* <Routes>
+      <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/cred-pay" element={<Pay />} />
-      </Routes> */}
-      <Section_2 />
+      </Routes>
     </div>
   );
 }

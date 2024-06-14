@@ -85,8 +85,8 @@ function Section_2() {
 
   return (
     <div id="section-2">
-      <div className="dummy"></div>
       <div className="row section-2-content">
+        <h1 className="section-2-header">NOT EVERYONE MAKES IT IN.</h1>
         <div className="col-md-3"></div>
         <div className="col-md-6 d-flex">
           <div className="section-2-txt">
@@ -140,7 +140,6 @@ function Section_2() {
         </div>
         <div className="col-md-3"></div>
       </div>
-      <div className="dummy"></div>
     </div>
   );
 }

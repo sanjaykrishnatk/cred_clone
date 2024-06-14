@@ -1,0 +1,83 @@
+@font-face {
+  font-family: denton-regular;
+  src: url("https://web-assets.cred.club/v2/_next/assets/fonts/Denton-Light.woff");
+}
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-smooth iframe {
+  pointer-events: none;
+}
+.dummy {
+  width: 100%;
+  min-height: 100vh;
+  background-color: white;
+}
+#page-2 {
+  width: 100%;
+  background-color: black;
+  min-height: 100vh;
+}
+.page-2-content {
+  position: relative;
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.page-2-header {
+  font-family: Gilroy;
+  font-size: 27px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 36px;
+  letter-spacing: 6px;
+  text-align: left;
+  color: rgb(255, 255, 255);
+  margin-top: 200px;
+}
+.page-2-txt {
+  position: absolute;
+  left: 10%;
+  font-family: denton-regular;
+  font-size: 70px;
+  font-weight: 300;
+  line-height: 100px;
+  letter-spacing: 1.26px;
+  color: rgb(51, 51, 51);
+  text-align: left;
+}
+.page-2-txt-copy {
+  position: absolute;
+  left: 10%;
+  color: white;
+  text-align: left;
+  overflow: hidden;
+  /* width: 0%; */
+}
+.page-2-txt-copy h1 {
+  font-family: denton-regular;
+  font-size: 70px;
+  font-weight: 300;
+  line-height: 100px;
+  letter-spacing: 1.26px;
+  width: 0%;
+  text-wrap: nowrap;
+  overflow: hidden;
+  margin-bottom: -23px !important;
+}

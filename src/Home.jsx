@@ -5,9 +5,21 @@ import Menu from "./Menu";
 import Banner from "./Banner";
 import "./Home.css";
 import { Link } from "react-router-dom";
-
+import Lenis from "lenis";
 function Home() {
   const [isMobile, setIsMobile] = useState(false);
+  const lenis = new Lenis();
+
+  lenis.on("scroll", (e) => {
+    console.log(e);
+  });
+
+  function raf(time) {
+    lenis.raf(time);
+    requestAnimationFrame(raf);
+  }
+
+  requestAnimationFrame(raf);
   useEffect(() => {
     const setMobile = () => {
       setIsMobile(window.innerWidth <= 768);

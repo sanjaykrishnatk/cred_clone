@@ -11,7 +11,7 @@ function Section_2() {
         trigger: ".section-2-content",
         start: isMobile ? "30% 20%" : "0% 35%",
         end: "120% 50%",
-        scrub: 5,
+        scrub: isMobile ? 15 : 5,
       },
     });
     t1.to(".section-2-txt-copy .line-1", {

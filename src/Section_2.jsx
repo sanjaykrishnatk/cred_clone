@@ -9,74 +9,63 @@ function Section_2() {
     let t1 = gsap.timeline({
       scrollTrigger: {
         trigger: ".section-2-content",
-        start: isMobile ? "30% 50%" : "0% 50%",
-        end: "100% 50%",
+        start: isMobile ? "30% 20%" : "0% 10%",
+        end: "120% 50%",
         scrub: 20,
       },
     });
     t1.to(".section-2-txt-copy .line-1", {
       width: "100%",
-      duration: 10,
+      duration: 5,
     });
     t1.to(".section-2-txt-copy .line-2", {
       width: "100%",
-      duration: 10,
-      delay: -0.2,
+      duration: 5,
     });
     t1.to(".section-2-txt-copy .line-3", {
       width: "100%",
-      duration: 10,
-      delay: -0.2,
+      duration: 5,
     });
     t1.to(".section-2-txt-copy .line-4", {
-      width: "100%",
-      duration: 10,
-      delay: -0.2,
-    });
-    t1.to(".section-2-txt-copy .line-5", {
-      width: "100%",
-      duration: 10,
-      delay: -0.2,
-    });
-    t1.to(".section-2-txt-copy .line-6", {
-      width: "100%",
-      duration: 10,
-      delay: -0.2,
-    });
-    t1.to(".section-2-txt-copy .line-7", {
-      width: "100%",
-      duration: 10,
-      delay: -0.2,
-    });
-    t1.to(".section-2-txt-copy .line-8", {
-      width: "100%",
-      duration: 10,
-      delay: -0.2,
-    });
-    t1.to(".section-2-txt-copy .line-9", {
-      width: "100%",
-      duration: 10,
-      delay: -0.2,
-    });
-    t1.to(".section-2-txt-copy .line-10", {
       width: "100%",
       duration: 5,
       delay: -0.2,
     });
+    t1.to(".section-2-txt-copy .line-5", {
+      width: "100%",
+      duration: 5,
+    });
+    t1.to(".section-2-txt-copy .line-6", {
+      width: "100%",
+      duration: 5,
+    });
+    t1.to(".section-2-txt-copy .line-7", {
+      width: "100%",
+      duration: 5,
+    });
+    t1.to(".section-2-txt-copy .line-8", {
+      width: "100%",
+      duration: 5,
+    });
+    t1.to(".section-2-txt-copy .line-9", {
+      width: "100%",
+      duration: 5,
+    });
+    t1.to(".section-2-txt-copy .line-10", {
+      width: "100%",
+      duration: 5,
+    });
     t1.to(".section-2-txt-copy .line-11", {
       width: "100%",
-      duration: 10,
-      delay: -0.2,
+      duration: 5,
     });
     t1.to(".section-2-txt-copy .line-12", {
       width: "100%",
-      duration: 10,
-      delay: -0.2,
+      duration: 5,
     });
     t1.to(".section-2-txt-copy .line-13", {
       width: "100%",
-      duration: 10,
-      delay: -0.2,
+      duration: 5,
     });
   }, []);
 

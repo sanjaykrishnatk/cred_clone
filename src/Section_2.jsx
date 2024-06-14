@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-import Lenis from "lenis";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import "./Section_2.css";
@@ -7,25 +6,12 @@ gsap.registerPlugin(ScrollTrigger);
 
 function Section_2() {
   useEffect(() => {
-    const lenis = new Lenis();
-
-    lenis.on("scroll", (e) => {
-      console.log(e);
-    });
-
-    function raf(time) {
-      lenis.raf(time);
-      requestAnimationFrame(raf);
-    }
-
-    requestAnimationFrame(raf);
-
     let t1 = gsap.timeline({
       scrollTrigger: {
         trigger: ".section-2-content",
         start: "0% 50%",
         end: "100% 50%",
-        scrub: 12,
+        scrub: 20,
       },
     });
     t1.to(".section-2-txt-copy .line-1", {
@@ -80,7 +66,6 @@ function Section_2() {
       width: "100%",
       duration: 10,
     });
-    return () => lenis.destroy();
   }, []);
 
   return (

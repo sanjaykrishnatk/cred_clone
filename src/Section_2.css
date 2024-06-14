@@ -2,34 +2,6 @@
   font-family: denton-regular;
   src: url("./assets/Denton-Light.woff");
 }
-
-html.lenis,
-html.lenis body {
-  height: auto;
-}
-
-.lenis.lenis-smooth {
-  scroll-behavior: auto !important;
-}
-
-.lenis.lenis-smooth [data-lenis-prevent] {
-  overscroll-behavior: contain;
-}
-
-.lenis.lenis-stopped {
-  overflow: hidden;
-}
-
-.lenis.lenis-smooth iframe {
-  pointer-events: none;
-}
-
-.dummy {
-  width: 100%;
-  min-height: 100vh;
-  background-color: white;
-}
-
 #section-2 {
   background-color: black;
 }

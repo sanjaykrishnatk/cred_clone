@@ -34,26 +34,6 @@ video {
   font-family: denton-regular;
   src: url("https://web-assets.cred.club/v2/_next/assets/fonts/Denton-Light.woff");
 }
-html.lenis,
-html.lenis body {
-  height: auto;
-}
-
-.lenis.lenis-smooth {
-  scroll-behavior: auto !important;
-}
-
-.lenis.lenis-smooth [data-lenis-prevent] {
-  overscroll-behavior: contain;
-}
-
-.lenis.lenis-stopped {
-  overflow: hidden;
-}
-
-.lenis.lenis-smooth iframe {
-  pointer-events: none;
-}
 
 /* font-family: denton;
 

@@ -20,27 +20,39 @@ function Section_3() {
               }
             />
           </video>
-          <h1 className="text-center section-3-header">
+          {/* <h1 className="text-center section-3-header">
             all what you deserve.
             <br />
             and some more.
-          </h1>
+          </h1> */}
           {/* <h6 className="section-3-sub-txt text-center">
             if you're a CRED member, you're already a step ahead. every
             <br />
             experience you unlock takes you higher up the pedestal.
           </h6> */}
           {isMobile ? (
-            <h6 className="section-3-sub-txt text-center">
-              if you're a CRED member, you're already a step ahead. every
-              experience you unlock takes you higher up the pedestal.
-            </h6>
+            <>
+              <h1 className="text-center section-3-header">
+                all what you deserve. and some more.
+              </h1>
+              <h6 className="section-3-sub-txt text-center">
+                if you're a CRED member, you're already a step ahead. every
+                experience you unlock takes you higher up the pedestal.
+              </h6>
+            </>
           ) : (
-            <h6 className="section-3-sub-txt text-center">
-              if you're a CRED member, you're already a step ahead. every
-              <br />
-              experience you unlock takes you higher up the pedestal.
-            </h6>
+            <>
+              <h1 className="text-center section-3-header">
+                all what you deserve.
+                <br />
+                and some more.
+              </h1>
+              <h6 className="section-3-sub-txt text-center">
+                if you're a CRED member, you're already a step ahead. every
+                <br />
+                experience you unlock takes you higher up the pedestal.
+              </h6>
+            </>
           )}
         </div>
       </div>

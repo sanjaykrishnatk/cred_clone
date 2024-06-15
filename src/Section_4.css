@@ -83,8 +83,11 @@
     text-align: center;
   }
   .section-4-text {
-    top: 3%;
+    top: 10%;
     left: 0%;
     padding: 0 30px;
+  }
+  .sec-4-video {
+    top: 17%;
   }
 }

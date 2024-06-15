@@ -4,6 +4,7 @@ import mobileBg from "./assets/hero-mobile.mp4";
 import Menu from "./Menu";
 import Banner from "./Banner";
 import Section_2 from "./Section_2";
+import Section_3 from "./Section_3";
 import Pay from "./Pay";
 import "./Home.css";
 import { Link } from "react-router-dom";
@@ -49,7 +50,7 @@ function Home() {
         </p>
       </div>
       <Section_2 />
-      <Pay />
+      <Section_3 />
     </div>
   );
 }

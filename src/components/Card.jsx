@@ -1,7 +1,8 @@
 import React from "react";
 import "./Card.css";
+import { Link } from "react-router-dom";
 function Card(props) {
-  const { text1, text2, bgImg, iconImg } = props;
+  const { text1, text2, bgImg, iconImg, link } = props;
   return (
     <div className="cred-card" style={{ backgroundImage: `url(./${bgImg})` }}>
       <img src={iconImg} alt="scan and pay img" className="cred-card-img" />
@@ -10,7 +11,17 @@ function Card(props) {
         <br /> {text2}
       </div>
       <div className="cred-card-btn">
-        <div className="btn-txt">KNOW MORE</div>
+        {link ? (
+          <Link
+            to={"/cred-pay"}
+            style={{ textDecoration: "none", color: "white" }}
+          >
+            <div className="btn-txt">KNOW MORE</div>
+          </Link>
+        ) : (
+          <div className="btn-txt">KNOW MORE</div>
+        )}
+
         <svg
           width="19"
           height="8"

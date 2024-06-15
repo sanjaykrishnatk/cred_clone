@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./Pay.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircle } from "@fortawesome/free-solid-svg-icons";
@@ -14,6 +14,13 @@ function Pay() {
   const [pos3, setPos3] = useState("right");
   const lenis = new Lenis();
 
+  useEffect(() => {
+    document.documentElement.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: "instant",
+    });
+  }, []);
   lenis.on("scroll", (e) => {
     console.log(e);
   });

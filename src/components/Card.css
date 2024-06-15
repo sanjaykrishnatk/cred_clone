@@ -1,0 +1,88 @@
+.cred-card {
+  height: 75vh;
+  padding: 60px 60px 0px 40px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+  display: flex;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex: 0 0 30%;
+  margin-left: 20px;
+}
+.cred-card-img {
+  height: 30px;
+}
+.cred-card-txt {
+  width: 100%;
+  font-family: Gilroy;
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 3rem;
+  letter-spacing: -0.075rem;
+  text-align: left;
+  color: rgb(255, 255, 255);
+  margin-top: 30px;
+}
+.cred-card-btn {
+  position: relative;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  margin-top: 50px;
+  text-align: center;
+  color: rgb(13, 13, 13);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background: rgba(0, 0, 0, 0.3);
+  padding: 26px 32px;
+  width: fit-content;
+  text-decoration: none;
+  outline: none;
+  cursor: pointer;
+}
+.btn-txt {
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-family: Gilroy;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+@media (max-width: 768px) {
+  .cred-card {
+    -webkit-box-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: center;
+    align-items: center;
+    flex: 0 0 90%;
+    height: 70vh;
+    padding: 30px 60px 0px 40px;
+  }
+  .cred-card-img {
+    height: 20px;
+  }
+  .cred-card-txt {
+    margin-top: 15px;
+    font-size: 1.563rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.875rem;
+    letter-spacing: -0.038rem;
+    text-align: center;
+  }
+  .cred-card-btn{
+    padding: 16px 22px;
+    margin-top: 15px;
+}
+  }
+}

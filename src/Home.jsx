@@ -5,6 +5,7 @@ import Menu from "./Menu";
 import Banner from "./Banner";
 import Section_2 from "./Section_2";
 import Section_3 from "./Section_3";
+import Section_4 from "./Section_4";
 import Pay from "./Pay";
 import "./Home.css";
 import { Link } from "react-router-dom";
@@ -51,6 +52,7 @@ function Home() {
       </div>
       <Section_2 />
       <Section_3 />
+      <Section_4 />
     </div>
   );
 }

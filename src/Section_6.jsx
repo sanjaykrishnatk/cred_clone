@@ -10,10 +10,10 @@ function Section_6() {
       "linear-gradient(to right, rgb(0, 0, 0), rgb(74, 73, 73), rgb(0, 0, 0)) 1 / 1 / 0 stretch",
     borderWidth: "1px",
     borderStyle: "solid",
-    borderLeft: "0 !important",
-    borderRight: "0 !important",
+    borderLeft: "0",
+    borderRight: "0",
     backgroundColor: "black",
-    minHeight: "100vh !important",
+    minHeight: "100vh",
     overflow: "hidden",
   };
   return (

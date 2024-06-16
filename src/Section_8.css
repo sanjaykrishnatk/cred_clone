@@ -1,0 +1,148 @@
+.section-8 {
+  width: 100%;
+  height: auto;
+  background-color: rgb(0, 0, 0);
+  align-items: flex-start;
+  padding-top: 50px;
+}
+.section-8-content {
+  width: 100%;
+  flex: 1 1 0%;
+  -webkit-box-align: center;
+  justify-content: space-around;
+  background: linear-gradient(
+    90deg,
+    rgb(0, 0, 0),
+    rgb(19, 19, 19),
+    rgb(0, 0, 0)
+  );
+  border-image: linear-gradient(
+      to right,
+      rgb(0, 0, 0),
+      rgb(74, 73, 73),
+      rgb(0, 0, 0)
+    )
+    1 / 1 / 0 stretch;
+  border-width: 1px;
+  border-style: solid;
+  padding: 100px 0px;
+}
+.section-8-sub-txt {
+  font-family: Gilroy;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 28px;
+  letter-spacing: 4.5px;
+  text-align: left;
+  color: rgba(255, 255, 255, 0.9);
+}
+.section-8-header {
+  font-family: denton;
+  font-size: 96px;
+  font-weight: 700;
+  line-height: 95px;
+  letter-spacing: 0.2px;
+  text-align: left;
+  color: rgb(255, 255, 255);
+}
+.section-8-rating {
+  font-family: Gilroy;
+  font-size: 64px;
+  font-weight: 600;
+  line-height: 82px;
+  letter-spacing: 0.69px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: space-around;
+  gap: 40px;
+}
+.rating-card {
+  text-align: left;
+  justify-content: space-around;
+  padding: 10px;
+}
+.rating-stars {
+  width: 145px;
+}
+.rating-card-txt {
+  font-family: Gilroy;
+  font-size: 95px;
+  font-weight: 700;
+  line-height: 88px;
+  letter-spacing: -3.1px;
+  padding-top: 30px;
+  text-align: center;
+}
+.rating-card-sub-txt {
+  font-family: Gilroy;
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 88px;
+  letter-spacing: -1px;
+  opacity: 0.6;
+}
+.rating-card-secondary-txt {
+  font-family: Gilroy;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 22px;
+  letter-spacing: 6px;
+  text-align: center;
+  opacity: 0.5;
+}
+@media (max-width: 768px) {
+  .section-8-content {
+    flex-direction: column;
+    padding: 80px 0px;
+  }
+  .section-8-sub-txt {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 3px;
+    text-align: center;
+  }
+  .section-8-header {
+    font-size: 56px;
+    line-height: 52px;
+    letter-spacing: 0.3px;
+    text-align: center;
+  }
+  .section-8-rating {
+    font-size: 30px;
+    line-height: 62px;
+    letter-spacing: 0px;
+    text-align: center;
+    column-gap: 20px;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    margin-top: 40px;
+  }
+  .rating-card {
+    padding: 8px;
+  }
+  .rating-stars {
+    width: 100px;
+  }
+  .rating-card-txt {
+    font-size: 42px;
+    line-height: 62px;
+    letter-spacing: 0px;
+    text-align: center;
+  }
+  .rating-card-sub-txt {
+    font-size: 25px;
+    line-height: 48px;
+    letter-spacing: 0px;
+  }
+  .rating-card-secondary-txt {
+    font-size: 15px;
+    line-height: 16px;
+    letter-spacing: 3.2px;
+  }
+}

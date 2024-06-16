@@ -2,8 +2,22 @@ import React from "react";
 import "./Section_6.css";
 function Section_6() {
   const isMobile = window.matchMedia("(max-width:768px)").matches;
+  const sectionStyle = {
+    width: "100%",
+    position: "relative",
+    marginTop: "250px",
+    borderImage:
+      "linear-gradient(to right, rgb(0, 0, 0), rgb(74, 73, 73), rgb(0, 0, 0)) 1 / 1 / 0 stretch",
+    borderWidth: "1px",
+    borderStyle: "solid",
+    borderLeft: "0 !important",
+    borderRight: "0 !important",
+    backgroundColor: "black",
+    minHeight: "100vh !important",
+    overflow: "hidden",
+  };
   return (
-    <div className="section-6" id="section-6-container">
+    <div className="section-6" id="section-6-container" style={sectionStyle}>
       <div className="section-6-video">
         <video autoPlay muted loop className="w-100">
           <source

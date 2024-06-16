@@ -3,7 +3,7 @@ import "./Section_6.css";
 function Section_6() {
   const isMobile = window.matchMedia("(max-width:768px)").matches;
   return (
-    <div className="section-6">
+    <div className="section-6" id="section-6-container">
       <div className="section-6-video">
         <video autoPlay muted loop className="w-100">
           <source

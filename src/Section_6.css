@@ -1,6 +1,6 @@
 .section-6 {
-  width: 100%;
-  /* position: relative; */
+  width: 100% !important;
+  position: relative;
   margin-top: 250px;
   border-image: linear-gradient(
       to right,
@@ -14,7 +14,7 @@
   border-left: 0 !important;
   border-right: 0 !important;
   background-color: black;
-  min-height: 100vh;
+  min-height: 100vh !important;
   overflow: hidden;
 }
 .section-6-video {

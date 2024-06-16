@@ -1,6 +1,6 @@
 .section-6 {
   width: 100%;
-  position: relative !important;
+  position: relative;
   margin-top: 250px;
   border-image: linear-gradient(
       to right,
@@ -68,5 +68,8 @@
     line-height: 22px;
     letter-spacing: 0.2px;
     padding: 0px 40px;
+  }
+  .section-6 {
+    margin-top: 150px;
   }
 }

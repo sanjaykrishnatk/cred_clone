@@ -9,7 +9,7 @@ function Section_2() {
     let t1 = gsap.timeline({
       scrollTrigger: {
         trigger: ".section-2-content",
-        start: isMobile ? "30% 20%" : "0% 35%",
+        start: isMobile ? "30% 30%" : "0% 40%",
         end: "120% 50%",
         scrub: isMobile ? 15 : 5,
       },

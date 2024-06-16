@@ -57,7 +57,7 @@ function Home() {
       <Section_3 />
       <Section_4 />
       <Section_5 />
-      {/* <Section_6 /> */}
+      <Section_6 />
       <Section_7 />
     </div>
   );

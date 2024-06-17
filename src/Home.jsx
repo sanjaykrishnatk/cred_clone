@@ -11,6 +11,7 @@ import Section_6 from "./Section_6";
 import Section_7 from "./Section_7";
 import Section_8 from "./Section_8";
 import Section_9 from "./Section_9";
+import Section_10 from "./Section_10";
 import Pay from "./Pay";
 import "./Home.css";
 import { Link } from "react-router-dom";
@@ -63,6 +64,7 @@ function Home() {
       <Section_7 />
       <Section_8 />
       <Section_9 />
+      <Section_10 />
     </div>
   );
 }

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Container, Navbar, Offcanvas } from "react-bootstrap";
 import Hamburger from "hamburger-react";
 import "./Menu.css";
@@ -12,6 +12,13 @@ function Menu() {
     console.log(name);
     setHoveredItem(name);
   };
+  useEffect(() => {
+    if (showOffcanvas) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto"; // or 'visible'
+    }
+  }, [showOffcanvas]);
   const isMobile = window.matchMedia("(max-width:768px)").matches;
   console.log(`test sucesss ${isMobile}`);
   return (

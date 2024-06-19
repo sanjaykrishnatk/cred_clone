@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import videoBg from "./assets/hero-desktop.mp4";
 import mobileBg from "./assets/hero-mobile.mp4";
 import Menu from "./Menu";
@@ -12,21 +12,12 @@ import Section_7 from "./Section_7";
 import Section_8 from "./Section_8";
 import Section_9 from "./Section_9";
 import Section_10 from "./Section_10";
+import Footer from "./Footer";
 import Pay from "./Pay";
 import "./Home.css";
 import { Link } from "react-router-dom";
 function Home() {
-  const [isMobile, setIsMobile] = useState(false);
-  useEffect(() => {
-    const setMobile = () => {
-      setIsMobile(window.innerWidth <= 768);
-    };
-
-    setMobile(); // Set initial state
-    window.addEventListener("resize", setMobile); // Update state on resize
-    return () => window.removeEventListener("resize", setMobile);
-  }, []);
-
+  const isMobile = window.matchMedia("(max-width:768px)").matches;
   return (
     <div className="main">
       <Banner id="banner-container" />
@@ -65,6 +56,7 @@ function Home() {
       <Section_8 />
       <Section_9 />
       <Section_10 />
+      <Footer />
     </div>
   );
 }

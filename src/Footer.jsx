@@ -254,7 +254,7 @@ function Footer() {
               </div>
             </Row>
             <Row className="w-100 ms-0 me-0 d-flex justify-content-center align-items-center">
-              <div className="d-flex">
+              <div className="d-flex justify-content-center align-items-center">
                 <p className="footer-last-txt-m">privacy policy</p>
                 <p className="footer-last-txt-m border border-0">
                   terms and conditions

@@ -16,7 +16,7 @@ function Menu() {
     if (showOffcanvas) {
       document.body.style.overflow = "hidden";
     } else {
-      document.body.style.overflow = "auto"; // or 'visible'
+      document.body.style.overflow = "auto";
     }
   }, [showOffcanvas]);
   const isMobile = window.matchMedia("(max-width:768px)").matches;
@@ -322,6 +322,31 @@ function Menu() {
                               trustworthy community
                             </p>
                           </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      className="headers-mobile"
+                      style={{
+                        borderTop: "1px solid rgba(255, 255, 255, 0.1)",
+                      }}
+                    >
+                      <div className="headers-mobile-content">
+                        <div className="txt-mobile-header">PAYMENTS</div>
+                        <div className="mobile-header-icon">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                          >
+                            <path
+                              d="M16.8015 8.79492L12.3754 12.5529L7.94935 8.79492L6.5897 9.95752L12.3754 14.8699L18.1611 9.95752L16.8015 8.79492Z"
+                              fill="white"
+                              fill-opacity="0.6"
+                            ></path>
+                          </svg>
                         </div>
                       </div>
                     </div>

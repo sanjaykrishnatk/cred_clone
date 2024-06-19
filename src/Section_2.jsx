@@ -76,31 +76,31 @@ function Section_2() {
         <div className="col-md-3"></div>
         <div className="col-md-6 d-flex section-2-wrapper">
           <div className="section-2-txt">
-            the story of CRED
+            <h1>the story of CRED</h1>
             <br />
-            begins with trust. we
+            <h1> begins with trust. we</h1>
             <br />
-            believe individuals
+            <h1>believe individuals</h1>
             <br />
-            who've proven their
+            <h1>who've proven their</h1>
             <br />
-            trustworthiness deserve
+            <h1>trustworthiness deserve</h1>
             <br />
-            better: better
+            <h1>better: better</h1>
             <br />
-            experiences, better
+            <h1>experiences, better</h1>
             <br />
-            rewards, better rules.
+            <h1>rewards, better rules.</h1>
             <br />
-            this is the status quo
+            <h1>this is the status quo</h1>
             <br />
-            we're building. make it
+            <h1>we're building. make it</h1>
             <br />
-            to the club, and
+            <h1>to the club, and</h1>
             <br />
-            experience the
+            <h1>experience the</h1>
             <br />
-            ascension yourself.
+            <h1>ascension yourself.</h1>
           </div>
           <div className="section-2-txt-copy">
             <h1 className="line-1">the story of CRED</h1>

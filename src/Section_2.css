@@ -17,17 +17,17 @@
 .section-2-txt,
 .section-2-txt-copy {
   width: 100%;
-  /* padding-right: 15px; */
   text-align: left;
 }
 
-.section-2-txt {
+.section-2-txt h1 {
   font-family: denton-regular;
   font-size: 70px;
   font-weight: 300;
   line-height: 100px;
   letter-spacing: 1.26px;
   color: rgb(51, 51, 51);
+  margin-bottom: 0;
 }
 .section-2-txt-copy {
   position: absolute;
@@ -40,7 +40,7 @@
   letter-spacing: 1.26px;
   width: 0%;
   overflow: hidden;
-  margin-bottom: -24px !important;
+  margin-bottom: 0px !important;
   color: white;
   text-wrap: nowrap;
 }
@@ -59,7 +59,7 @@
   margin-bottom: 70px;
 }
 @media (max-width: 680px) {
-  .section-2-txt,
+  .section-2-txt h1,
   .section-2-txt-copy h1 {
     font-size: 34px !important;
     line-height: 48px !important;
@@ -74,5 +74,7 @@
   .section-2-wrapper {
     position: relative;
     left: 10%;
+    padding-right: 0 !important;
+    padding-left: 0 !important;
   }
 }

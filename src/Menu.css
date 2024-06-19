@@ -197,3 +197,130 @@
   width: 53px;
   margin-top: 40px;
 }
+/* mobile version */
+.menu-bar-mobile {
+  padding: 64px 40px 0px;
+}
+.navbar-logo-mobile {
+  flex-grow: 1;
+  border: 1px solid rgba(255, 255, 255, 0.3) !important;
+  background: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(14px);
+  padding: 10px;
+  max-width: 210px !important;
+}
+.mobile-navbar-content {
+  overflow-y: scroll;
+  scrollbar-width: none;
+  width: 100%;
+  height: 100vh;
+}
+.headers-mobile {
+  max-height: 10vh;
+  transition-property: max-height;
+  transition-duration: 0.2s;
+  transition-timing-function: linear;
+  border: none;
+}
+.headers-mobile-content {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.txt-mobile-header {
+  font-family: Gilroy;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 17.635px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  text-align: left;
+  color: rgba(255, 255, 255, 0.9);
+  align-items: end;
+  margin-top: 2px;
+}
+.mobile-header-icon {
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  transition: all 0.3s ease-in-out 0s;
+}
+.header-1-mobile-wrapper {
+  transition-property: opacity;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in;
+  border: none;
+  overflow: scroll hidden;
+  padding-right: 30px;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  scrollbar-width: none;
+}
+.header-1-mobile-content {
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  overflow-y: hidden;
+  width: fit-content;
+  padding-top: 20px;
+}
+.header-1-posters-mobile {
+  position: relative;
+  flex-direction: column;
+  margin-left: 20px;
+}
+.poster-mobile {
+  width: 140px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  max-width: fit-content;
+  height: auto;
+}
+.now-live-mobile {
+  position: absolute;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgb(0, 0, 0);
+  font-family: gilroy;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  top: -11px;
+  left: 25%;
+  padding: 5px 10px;
+  font-size: 7.486px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 12.833px;
+  letter-spacing: 2.139px;
+}
+.poster-mobile-txt {
+  font-family: Gilroy;
+  font-size: 11.772px;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 14.126px;
+  letter-spacing: 2.943px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.9);
+  -webkit-box-align: end;
+  align-items: end;
+  margin-top: 10px;
+  text-transform: uppercase;
+}
+.poster-mobile-sub-txt {
+  font-family: Gilroy;
+  font-size: 10.595px;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 13.538px;
+  letter-spacing: 0.059px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.4);
+  align-items: end;
+  margin-top: 2px;
+}

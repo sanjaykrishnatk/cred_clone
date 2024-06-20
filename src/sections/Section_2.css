@@ -1,6 +1,6 @@
 @font-face {
   font-family: denton-regular;
-  src: url("./assets/Denton-Light.woff");
+  src: url("../assets/Denton-Light.woff");
 }
 #section-2 {
   background-color: black;
@@ -21,7 +21,7 @@
 }
 
 .section-2-txt h1 {
-  font-family: denton-regular;
+  font-family: denton-regular !important;
   font-size: 70px;
   font-weight: 300;
   line-height: 100px;
@@ -33,7 +33,7 @@
   position: absolute;
 }
 .section-2-txt-copy h1 {
-  font-family: denton-regular;
+  font-family: denton-regular !important;
   font-size: 70px;
   font-weight: 300;
   line-height: 100px;

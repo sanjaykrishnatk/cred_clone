@@ -536,7 +536,6 @@ function Menu() {
                       className="headers-mobile"
                       style={{
                         borderTop: "1px solid rgba(255, 255, 255, 0.1)",
-                        marginBottom: "75px",
                       }}
                     >
                       <div className="headers-mobile-content">

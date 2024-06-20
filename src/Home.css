@@ -35,20 +35,6 @@ video {
   src: url("https://web-assets.cred.club/v2/_next/assets/fonts/Denton-Light.woff");
 }
 
-/* font-family: denton;
-
-text-align: center;
-
-display: flex;
-flex-direction: column;
--webkit-box-pack: center;
-justify-content: center;
-gap: 20px;
--webkit-box-align: center;
-align-items: center;
-max-width: 80%;
-width: 100%; */
-
 @media (max-width: 768px) {
   #banner-container,
   .banner-main {

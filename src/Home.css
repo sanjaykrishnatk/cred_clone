@@ -30,10 +30,6 @@ video {
   font-family: denton;
   src: url("./assets/DentonTest-Bold.otf");
 }
-@font-face {
-  font-family: denton-regular;
-  src: url("https://web-assets.cred.club/v2/_next/assets/fonts/Denton-Light.woff");
-}
 
 @media (max-width: 768px) {
   #banner-container,

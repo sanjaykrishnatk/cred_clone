@@ -10,7 +10,6 @@ function Menu() {
   const [hoveredItem, setHoveredItem] = useState("WHAT'S NEW");
   const [mobileHeader, showMobileHeader] = useState("h1");
   const handleHeaderShow = (value) => {
-    console.log(value);
     mobileHeader == value ? showMobileHeader(null) : showMobileHeader(value);
   };
   const getHeaderStyle = (value) => {
@@ -22,7 +21,6 @@ function Menu() {
       : { transform: "rotateZ(0deg)" };
   };
   const handleHover = (name) => {
-    console.log(name);
     setHoveredItem(name);
   };
   const isMobile = window.matchMedia("(max-width:768px)").matches;
@@ -36,7 +34,7 @@ function Menu() {
       }
     }
   }, [isMobile, showOffcanvas]);
-  console.log(`test sucesss ${isMobile}`);
+
   return (
     <>
       {isMobile ? (

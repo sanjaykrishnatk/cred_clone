@@ -63,7 +63,7 @@ html.lenis body {
 }
 @font-face {
   font-family: medusa;
-  src: url(./assets/OleoScript-Regular.ttf);
+  src: url(../assets/OleoScript-Regular.ttf);
 }
 #intro-main {
   font-family: Gilroy !important;

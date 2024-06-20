@@ -8,18 +8,34 @@ function Menu() {
   const [showOffcanvas, setShowOffcanvas] = useState(false);
   const [isOpen, setOpen] = useState(false);
   const [hoveredItem, setHoveredItem] = useState("WHAT'S NEW");
+  const [mobileHeader, showMobileHeader] = useState("h1");
+  const handleHeaderShow = (value) => {
+    console.log(value);
+    mobileHeader == value ? showMobileHeader(null) : showMobileHeader(value);
+  };
+  const getHeaderStyle = (value) => {
+    return mobileHeader == value ? { display: "block" } : { display: "none" };
+  };
+  const getHeaderIconStyle = (value) => {
+    return mobileHeader == value
+      ? { transform: "rotateZ(180deg)" }
+      : { transform: "rotateZ(0deg)" };
+  };
   const handleHover = (name) => {
     console.log(name);
     setHoveredItem(name);
   };
-  useEffect(() => {
-    if (showOffcanvas) {
-      document.body.style.overflow = "hidden";
-    } else {
-      document.body.style.overflow = "auto";
-    }
-  }, [showOffcanvas]);
   const isMobile = window.matchMedia("(max-width:768px)").matches;
+
+  useEffect(() => {
+    if (isMobile) {
+      if (showOffcanvas) {
+        document.body.style.overflow = "hidden";
+      } else {
+        document.body.style.overflow = "auto";
+      }
+    }
+  }, [isMobile, showOffcanvas]);
   console.log(`test sucesss ${isMobile}`);
   return (
     <>
@@ -247,24 +263,35 @@ function Menu() {
                   <div className="mobile-navbar-content d-flex flex-column text-light">
                     <div className="headers-mobile">
                       <div className="headers-mobile-content">
-                        <div className="txt-mobile-header">WHAT'S NEW</div>
-                        <div className="mobile-header-icon">
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="24"
-                            height="24"
-                            viewBox="0 0 24 24"
-                            fill="none"
+                        <div
+                          className="d-flex"
+                          onClick={() => handleHeaderShow("h1")}
+                        >
+                          <div className="txt-mobile-header">WHAT'S NEW</div>
+                          <div
+                            className="mobile-header-icon"
+                            style={getHeaderIconStyle("h1")}
                           >
-                            <path
-                              d="M16.8015 8.79492L12.3754 12.5529L7.94935 8.79492L6.5897 9.95752L12.3754 14.8699L18.1611 9.95752L16.8015 8.79492Z"
-                              fill="white"
-                              fill-opacity="0.6"
-                            ></path>
-                          </svg>
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="24"
+                              height="24"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                            >
+                              <path
+                                d="M16.8015 8.79492L12.3754 12.5529L7.94935 8.79492L6.5897 9.95752L12.3754 14.8699L18.1611 9.95752L16.8015 8.79492Z"
+                                fill="white"
+                                fill-opacity="0.6"
+                              ></path>
+                            </svg>
+                          </div>
                         </div>
                       </div>
-                      <div className="header-1-mobile-wrapper">
+                      <div
+                        className="header-1-mobile-wrapper"
+                        style={getHeaderStyle("h1")}
+                      >
                         <div className="header-1-mobile-content d-flex justify-content-center">
                           <div className="header-1-posters-mobile d-flex align-items-center justify-content-center ms-0">
                             <img
@@ -332,21 +359,220 @@ function Menu() {
                       }}
                     >
                       <div className="headers-mobile-content">
-                        <div className="txt-mobile-header">PAYMENTS</div>
-                        <div className="mobile-header-icon">
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="24"
-                            height="24"
-                            viewBox="0 0 24 24"
-                            fill="none"
+                        <div
+                          className="d-flex"
+                          onClick={() => handleHeaderShow("h2")}
+                        >
+                          <div className="txt-mobile-header">PAYMENTS</div>
+                          <div
+                            className="mobile-header-icon"
+                            style={getHeaderIconStyle("h2")}
                           >
-                            <path
-                              d="M16.8015 8.79492L12.3754 12.5529L7.94935 8.79492L6.5897 9.95752L12.3754 14.8699L18.1611 9.95752L16.8015 8.79492Z"
-                              fill="white"
-                              fill-opacity="0.6"
-                            ></path>
-                          </svg>
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="24"
+                              height="24"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                            >
+                              <path
+                                d="M16.8015 8.79492L12.3754 12.5529L7.94935 8.79492L6.5897 9.95752L12.3754 14.8699L18.1611 9.95752L16.8015 8.79492Z"
+                                fill="white"
+                                fillOpacity="0.6"
+                              ></path>
+                            </svg>
+                          </div>
+                        </div>
+                        <div
+                          className="mobile-header-common-wrapper"
+                          style={getHeaderStyle("h2")}
+                        >
+                          <div className="mobile-header-common-content">
+                            <div className="mobile-features-common">
+                              <img
+                                src="/tnp-logo.png"
+                                alt="tnp-logo"
+                                style={{ width: "20px" }}
+                              />
+                              <p>TAP TO PAY</p>
+                            </div>
+                            <div className="mobile-features-common">
+                              <img
+                                src="/p2p-logo.png"
+                                alt="p2p-logo"
+                                style={{ width: "20px" }}
+                              />
+                              <p>PAY ANYONE</p>
+                            </div>
+                            <div className="mobile-features-common">
+                              <img
+                                src="/rupay-logo.png"
+                                alt="rupay-logo"
+                                style={{ width: "20px" }}
+                              />
+                              <p>RUPAY CARDS ON UPI</p>
+                            </div>
+                            <div className="mobile-features-common">
+                              <img
+                                src="/snp-logo.png"
+                                alt="snp-logo"
+                                style={{ width: "20px" }}
+                              />
+                              <p>SCAN & PAY</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      className="headers-mobile"
+                      style={{
+                        borderTop: "1px solid rgba(255, 255, 255, 0.1)",
+                      }}
+                    >
+                      <div className="headers-mobile-content">
+                        <div
+                          className="d-flex"
+                          onClick={() => handleHeaderShow("h3")}
+                        >
+                          <div className="txt-mobile-header">UPGRADES</div>
+                          <div
+                            className="mobile-header-icon"
+                            style={getHeaderIconStyle("h3")}
+                          >
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="24"
+                              height="24"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                            >
+                              <path
+                                d="M16.8015 8.79492L12.3754 12.5529L7.94935 8.79492L6.5897 9.95752L12.3754 14.8699L18.1611 9.95752L16.8015 8.79492Z"
+                                fill="white"
+                                fillOpacity="0.6"
+                              ></path>
+                            </svg>
+                          </div>
+                        </div>
+                        <div
+                          className="mobile-header-common-wrapper"
+                          style={getHeaderStyle("h3")}
+                        >
+                          <div className="mobile-header-common-content">
+                            <div className="mobile-features-common">
+                              <img
+                                src="/travel-logo.png"
+                                alt="travel-logo"
+                                style={{ width: "20px" }}
+                              />
+                              <p>TRAVEL</p>
+                            </div>
+                            <div className="mobile-features-common">
+                              <img
+                                src="/garage-logo.png"
+                                alt="garage-logo"
+                                style={{ width: "20px" }}
+                              />
+                              <p>GARAGE</p>
+                            </div>
+                            <div className="mobile-features-common">
+                              <img
+                                src="/mint-logo.png"
+                                alt="mint-logo"
+                                style={{ width: "20px" }}
+                              />
+                              <p>MINT</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      className="headers-mobile"
+                      style={{
+                        borderTop: "1px solid rgba(255, 255, 255, 0.1)",
+                      }}
+                    >
+                      <div className="headers-mobile-content">
+                        <div
+                          className="d-flex"
+                          onClick={() => handleHeaderShow("h4")}
+                        >
+                          <div className="txt-mobile-header">COMPANY</div>
+                          <div
+                            className="mobile-header-icon"
+                            style={getHeaderIconStyle("h4")}
+                          >
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="24"
+                              height="24"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                            >
+                              <path
+                                d="M16.8015 8.79492L12.3754 12.5529L7.94935 8.79492L6.5897 9.95752L12.3754 14.8699L18.1611 9.95752L16.8015 8.79492Z"
+                                fill="white"
+                                fillOpacity="0.6"
+                              ></path>
+                            </svg>
+                          </div>
+                        </div>
+                        <div
+                          className="mobile-header-common-wrapper"
+                          style={getHeaderStyle("h4")}
+                        >
+                          <div className="mobile-header-common-content">
+                            <div className="mobile-features-common flex-column align-items-start">
+                              <h6>ABOUT CRED</h6>
+                              <h6 style={{ marginTop: "20px" }}>CAREERS</h6>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      className="headers-mobile"
+                      style={{
+                        borderTop: "1px solid rgba(255, 255, 255, 0.1)",
+                        marginBottom: "75px",
+                      }}
+                    >
+                      <div className="headers-mobile-content">
+                        <div
+                          className="d-flex"
+                          onClick={() => handleHeaderShow("h5")}
+                        >
+                          <div className="txt-mobile-header">INSIDER PERKS</div>
+                          <div
+                            className="mobile-header-icon"
+                            style={getHeaderIconStyle("h5")}
+                          >
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="24"
+                              height="24"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                            >
+                              <path
+                                d="M16.8015 8.79492L12.3754 12.5529L7.94935 8.79492L6.5897 9.95752L12.3754 14.8699L18.1611 9.95752L16.8015 8.79492Z"
+                                fill="white"
+                                fillOpacity="0.6"
+                              ></path>
+                            </svg>
+                          </div>
+                        </div>
+                        <div
+                          className="mobile-header-common-wrapper"
+                          style={getHeaderStyle("h5")}
+                        >
+                          <div className="mobile-header-common-content">
+                            <div className="mobile-features-common flex-column align-items-start">
+                              <h6>UPGRADE TO UPI</h6>
+                            </div>
+                          </div>
                         </div>
                       </div>
                     </div>

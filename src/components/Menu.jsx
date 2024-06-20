@@ -118,7 +118,7 @@ function Menu() {
                       <path
                         d="M25.3337 17.3307H17.3337V25.3307H14.667V17.3307H6.66699V14.6641H14.667V6.66406H17.3337V14.6641H25.3337V17.3307Z"
                         fill="white"
-                        fill-opacity="0.8"
+                        fillOpacity="0.8"
                       ></path>
                     </svg>
                   </div>
@@ -230,7 +230,7 @@ function Menu() {
                           <path
                             d="M25.3337 17.3307H17.3337V25.3307H14.667V17.3307H6.66699V14.6641H14.667V6.66406H17.3337V14.6641H25.3337V17.3307Z"
                             fill="white"
-                            fill-opacity="0.8"
+                            fillOpacity="0.8"
                           ></path>
                         </svg>
                       </div>
@@ -280,7 +280,7 @@ function Menu() {
                               <path
                                 d="M16.8015 8.79492L12.3754 12.5529L7.94935 8.79492L6.5897 9.95752L12.3754 14.8699L18.1611 9.95752L16.8015 8.79492Z"
                                 fill="white"
-                                fill-opacity="0.6"
+                                fillOpacity="0.6"
                               ></path>
                             </svg>
                           </div>

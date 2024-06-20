@@ -1,6 +1,6 @@
 import React from "react";
 import "./Section_9.css";
-import Banner from "./Banner";
+// import Banner from "../components/Banner";
 function Section_9() {
   const isMobile = window.matchMedia("(max-width:768px)").matches;
   const largeDevStyle = {

@@ -12,9 +12,12 @@ function Pay() {
   const [pos1, setPos1] = useState("left");
   const [pos2, setPos2] = useState("middle");
   const [pos3, setPos3] = useState("right");
+  const isMobile = window.matchMedia("(max-width:768px)").matches;
   const lenis = new Lenis();
-
   useEffect(() => {
+    if (isMobile) {
+      document.body.style.overflow = "auto";
+    }
     document.documentElement.scrollTo({
       top: 0,
       left: 0,
